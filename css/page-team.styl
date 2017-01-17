@@ -1,0 +1,98 @@
+body
+	&.page-template-page-team
+		.content-wrap
+			.section-wrap
+				margin-top 50px
+				padding-bottom 50px
+				border-bottom 1px solid $blue_grey
+				
+				&:last-of-type
+					border-bottom none
+				
+				&#board
+					.team-member
+						width 32.5%
+						margin-right .5%
+			
+				&#mentioned-volunteers
+					.volunteers
+						-webkit-column-count 3
+						-moz-column-count 3
+						column-count 3
+				
+				.title 
+					font-style italic
+					margin-bottom 20px
+
+				.team-member
+					display inline-block
+					width 24%
+					margin 0 1% 2% 0
+					vertical-align top
+					
+					&:nth-of-type(4n)
+						margin-right 0
+
+					.headshot
+						display inherit
+						width 100%
+						padding-bottom 75%
+						
+						&.empty
+							background $blue_grey
+					
+					.personal-info
+						text-align left
+						font-size .8em
+						margin 5px 0 0 0
+
+@media all and (max-width:1380px)
+	body
+		&.page-template-page-team
+			.content-wrap
+				.section-wrap
+					.team-member
+						margin-right .5%
+
+@media all and (max-width:960px) and (min-width:641px)
+	body
+		&.page-template-page-team
+			.content-wrap
+				.section-wrap
+					.team-member
+						width 32.5%
+						margin-right .5%
+							
+						&:nth-of-type(2n)
+							margin-right .5%
+						
+						&:nth-of-type(3n)
+							margin-right 0
+					
+@media all and (max-width:640px)
+	body
+		&.page-template-page-team
+			.content-wrap
+				.section-wrap, #board
+					.team-member
+						width 48% !important
+						margin-right 1% !important
+						margin-bottom 10px !important
+						
+						&:nth-of-type(2n)
+							margin-right 0	
+					
+					&#info-header
+						div
+							width 100%
+							max-width none
+							
+							p
+								font-size 1.25em
+								margin-bottom 0
+							
+					&#mentioned-volunteers
+						.volunteers
+							-webkit-column-count 1 !important
+							-moz-column-count 1 !important
+							column-count 1 !important

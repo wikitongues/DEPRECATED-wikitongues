@@ -1,0 +1,91 @@
+header#header {
+  position: fixed;
+  top: 0;
+  z-index: 99999 !important;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+header#header #logo {
+  margin-left: 10px;
+  height: 100%;
+}
+header#header #logo img {
+  width: auto;
+  height: 100%;
+}
+header#header .menu-main-navigation-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+}
+header#header .menu-main-navigation-container ul {
+  margin: 0;
+  padding: 0;
+}
+header#header .menu-main-navigation-container ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 25px;
+}
+header#header .menu-main-navigation-container ul li:first-of-type a:hover,
+header#header .menu-main-navigation-container ul li:first-of-type a:active {
+  color: $light_blue;
+}
+header#header .menu-main-navigation-container ul li:first-of-type.current-menu-item a {
+  color: $light_blue;
+}
+header#header .menu-main-navigation-container ul li:nth-of-type(2) a:hover,
+header#header .menu-main-navigation-container ul li:nth-of-type(2) a:active {
+  color: $yellow;
+}
+header#header .menu-main-navigation-container ul li:nth-of-type(2).current-menu-item a {
+  color: $yellow;
+}
+header#header .menu-main-navigation-container ul li:nth-of-type(3) a:hover,
+header#header .menu-main-navigation-container ul li:nth-of-type(3) a:active {
+  color: $red;
+}
+header#header .menu-main-navigation-container ul li:nth-of-type(3).current-menu-item a {
+  color: $red;
+}
+header#header .menu-main-navigation-container ul li:last-of-type {
+  padding: 5px 10px;
+  margin-right: 0;
+  background: $yellow;
+}
+header#header .menu-main-navigation-container ul li:last-of-type a,
+header#header .menu-main-navigation-container ul li:last-of-type a:visited {
+  color: $white;
+  letter-spacing: 0.025em;
+}
+header#header .menu-main-navigation-container ul li a,
+header#header .menu-main-navigation-container ul li a:visited {
+  font-family: $sans_serif;
+  color: $deep_blue;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  -ms-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+body.admin-bar header#header {
+  top: 32px;
+}
+@media all and (max-width: 640px) {
+  body.admin-bar header#header {
+    top: 46px;
+  }
+  body header#header .menu-main-navigation-container {
+    left: 20%;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  body header#header .menu-main-navigation-container::-webkit-scrollbar {
+    display: none;
+  }
+}

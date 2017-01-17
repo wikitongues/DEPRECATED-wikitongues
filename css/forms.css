@@ -1,0 +1,281 @@
+body.page-template-page-form .section-tabs,
+body.page-id-193 .section-tabs {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+body.page-template-page-form .section-tabs li,
+body.page-id-193 .section-tabs li {
+  display: inline-block;
+  margin: 0 10px;
+}
+body.page-template-page-form .section-tabs li button,
+body.page-id-193 .section-tabs li button {
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  border: 0;
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+body.page-template-page-form .section-tabs li button.active,
+body.page-id-193 .section-tabs li button.active {
+  border-bottom: 3px solid #ffc328;
+}
+body.page-template-page-form .section-tabs li button:focus,
+body.page-id-193 .section-tabs li button:focus {
+  outline: none;
+}
+body.page-template-page-form .main-content,
+body.page-id-193 .main-content {
+  max-width: 1024px;
+  margin: auto;
+}
+body.page-template-page-form section,
+body.page-id-193 section {
+  display: none;
+}
+body.page-template-page-form section.active,
+body.page-id-193 section.active {
+  display: block;
+}
+body.page-template-page-form footer#footer,
+body.page-id-193 footer#footer {
+  margin-top: 100px;
+}
+.form-page form ul {
+  padding: 0;
+}
+.form-page form ul li {
+  list-style-type: none;
+}
+.form-page form label {
+  display: block;
+  font-style: italic;
+}
+.form-page form input,
+.form-page form textarea {
+  width: 100%;
+  margin: 0 0 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #11242f;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #78858a;
+}
+.form-page form input:focus,
+.form-page form textarea:focus {
+  margin-top: 10px;
+  background: #f7f7f7 !important;
+  outline: none;
+  border-bottom: 3px solid #ffc328;
+}
+.form-page form textarea {
+  height: 41px;
+  resize: none;
+}
+.form-page form textarea:focus {
+  height: 200px;
+}
+.form-page form fieldset label,
+.form-page form .checkbox label,
+.form-page form fieldset input,
+.form-page form .checkbox input {
+  width: initial;
+  display: inline-block;
+}
+.form-page form fieldset label,
+.form-page form .checkbox label {
+  font-style: normal;
+}
+.form-page form fieldset input,
+.form-page form .checkbox input {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.form-page form fieldset input:focus,
+.form-page form .checkbox input:focus {
+  margin-top: 0 !important;
+}
+.form-page form fieldset legend {
+  font-style: italic;
+}
+.form-page form .insetWrapper {
+  display: none;
+  position: relative;
+  margin: 0 0 20px;
+  padding: 30px;
+  background: #f7f7f7;
+}
+.form-page form .insetWrapper .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #4799fc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.015em;
+}
+.form-page form .grouping.legal {
+  width: 100%;
+}
+.form-page form .grouping.legal h2,
+.form-page form .grouping.legal .open-legal {
+  float: left;
+}
+.form-page form .grouping.legal .open-legal {
+  color: #4799fc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.015em;
+  padding: 25px 25px 0px;
+  cursor: pointer;
+  display: block;
+}
+.form-page form .grouping.legal .inset {
+  width: 95%;
+  color: #78858a;
+}
+.form-page form .grouping.legal .inset a {
+  color: #78858a;
+  border-bottom: 1px solid #78858a;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.form-page form .grouping.legal .inset a:hover {
+  color: #11242f;
+  border-bottom: 1px solid #11242f;
+}
+.form-page form .grouping.legal ol li {
+  margin-bottom: 10px;
+}
+.form-page form input[type="submit"] {
+  background: #4799fc;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  padding: 25px 0;
+  margin: 50px 0;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  border-radius: 2.5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #11242f;
+}
+.form-page .wcopc #opc-messages,
+.form-page .wcopc .woocommerce-info {
+  display: none !important;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products {
+  margin-bottom: 40px;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products::before {
+  content: "How Much Can You Contribute?";
+  display: block;
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.17em;
+  margin-bottom: 1em;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.attributes,
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.dash,
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.price {
+  display: none;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li label {
+  display: inline;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li label input {
+  width: initial;
+  margin: auto;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout .create-account {
+  display: none !important;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout abbr.required {
+  text-decoration: none;
+  border-bottom: none;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #order_review .opc_order_review {
+  display: none !important;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method {
+  margin-top: 40px;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method:first-of-type {
+  margin-top: 0;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method input.input-radio {
+  width: initial;
+  display: inline-block;
+}
+.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method label {
+  display: inline-block;
+}
+.form-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  color: $white;
+  background: rgba(71,153,252,0.9);
+  box-sizing: border-box;
+  padding: 10% 20%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.form-success a {
+  color: $white;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $white;
+}
+.form-success a.close-button {
+  background: $white;
+  color: $light_blue;
+  padding: 10px 30px;
+  border-radius: 2px;
+  border-bottom: 0;
+  cursor: pointer;
+}
+@media all and (max-width: 640px) {
+  body.page-template-page-form .section-tabs {
+    margin-bottom: 40px !important;
+  }
+  .form-page form .grouping.legal .open-legal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px 25px 25px !important;
+  }
+  .form-page form .insetWrapper {
+    padding: 40px 30px 30px 30px !important;
+  }
+}

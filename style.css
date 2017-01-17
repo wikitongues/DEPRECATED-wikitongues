@@ -1,0 +1,14 @@
+/*
+Theme Name: Wikitongues
+Author: Daniel Bogre Udell (@dbudell) and Freddie Andrade (@freddieandrade)
+Description: This theme was developed for exclusive use by Wikitongues
+License: GPL-2.0
+*/
+
+@import 'css/normalize.css';
+
+@import 'css/main.css';
+
+@import 'css/app.css';
+
+@import 'css/forms.css';
