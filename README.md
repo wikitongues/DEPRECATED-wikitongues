@@ -14,23 +14,23 @@ Coming soon
 - [x] SSL certificate and HTTPS
 
 ### Version 0.2
-- [] Process single donations
-- [] Process recurring donations
-- [] Basic contact form
-- [] Content audit
-- [] Style audit
-- [] Mobile audit
+- [ ] Process single donations
+- [ ] Process recurring donations
+- [ ] Basic contact form
+- [ ] Content audit
+- [ ] Style audit
+- [ ] Mobile audit
 
 ### Version 0.3
-- [] Name your price integration
-- [] Dynamic tabs on pages
-- [] Social media meta tags
-- [] Quick donate module
+- [ ] Name your price integration
+- [ ] Dynamic tabs on pages
+- [ ] Social media meta tags
+- [ ] Quick donate module
 
 ### Version 0.4
-- [] Security audit
-- [] WP standards audit
+- [ ] Security audit
+- [ ] WP standards audit
 
 ### Version 1.0
-- [] Wiki integration
-- [] Language localization using WPML.org
+- [ ] Wiki integration
+- [ ] Language localization using WPML.org
