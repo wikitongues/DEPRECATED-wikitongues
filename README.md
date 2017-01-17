@@ -1,9 +1,6 @@
 # wikitongues.org
 Codebase for Wikitongues website
 
-## Installation
-Coming soon
-
 ## Development Map
 ### Version 0.1 DEPLOYED
 - [x] Wordpress core installation
@@ -22,7 +19,7 @@ Coming soon
 - [ ] Mobile audit
 
 ### Version 0.3
-- [ ] Name your price integration
+- [ ] Name your price integration with one-page checkout (Woocommerce) 
 - [ ] Dynamic tabs on pages
 - [ ] Social media meta tags
 - [ ] Quick donate module
@@ -33,4 +30,4 @@ Coming soon
 
 ### Version 1.0
 - [ ] Wiki integration
-- [ ] Language localization using WPML.org
+- [ ] Language localization (WPML.org)
