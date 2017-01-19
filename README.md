@@ -3,15 +3,17 @@ Codebase for Wikitongues website
 
 ## Prerequisites
 You will need the following things installed on your computer
-+ Git
-+ MAMP, WAMP, or equivalent PHP environment
-+ WP-CLI is very helpful
++ [Git](https://git-scm.com/)
++ [MAMP](), [WAMP](), or an equivalent PHP environment
++ [WP-CLI](http://wp-cli.org/) is very helpful
 
 ## Installation
-+ Download the bundle 
-+ Clone this repo in the themes folder with git clone https://github.com/wikitongues/poly.git
-+ wp theme activate wikitongues
-
++ Make sure your local PHP environment is running correctly
++ Download the instance bundle [here]() and unpackage it in your local environment
++ In your browser, proceed to [LOCALHOST]/installer.php and follow the on-screen instructions to connect to your local database and run the installation
++ When the installation is complete, proceed to [LOCALHOST]/wp-content/themes and clone this repo: `git clone https://github.com/wikitongues/poly.git`
++ In your browser, proceed to [LOCALHOST]/wp-admin and login with **wt-admin** and **password**. Check for software updates and activate the **Wikitongues** theme.
++ Have fun!
 
 ## Development Map
 ### Version 0.1 DEPLOYED
