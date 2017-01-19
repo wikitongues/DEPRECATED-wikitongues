@@ -14,6 +14,7 @@ Codebase for Wikitongues website
 - [ ] Process single donations
 - [ ] Process recurring donations
 - [ ] Basic contact form
+- [ ] Transcription/translation form for already-published videos
 - [ ] Content audit
 - [ ] Style audit
 - [ ] Mobile audit
