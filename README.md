@@ -11,7 +11,7 @@ Codebase for Wikitongues website
 - [x] SSL certificate and HTTPS
 
 ### Version 0.2
-- [ ] Process single donations
+- [x] Process single donations
 - [ ] Process recurring donations
 - [ ] Basic contact form
 - [ ] Transcription/translation form for already-published videos
