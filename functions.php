@@ -100,7 +100,16 @@ function woo_custom_order_button_text() {
     return __( 'Donate now', 'woocommerce' ); 
 }
 
+// Thank you notification
+add_action( 'template_redirect', 'wc_custom_redirect_after_purchase' ); 
+function wc_custom_redirect_after_purchase() {
+    global $wp;
 
+    if ( is_checkout() && ! empty( $wp->query_vars['order-received'] ) ) {
+        wp_redirect( 'https://wikitongues.org/donation-received/' );
+        exit;
+    }
+}
 // function unrequired_wc_fields( $fields ) {
 //     $fields['billing_company']['required'] = false;
 //     $fields['billing_address_1']['required'] = false;
