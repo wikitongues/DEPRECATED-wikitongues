@@ -1,6 +1,18 @@
 # wikitongues.org
 Codebase for Wikitongues website
 
+#Setup
+A step by step setup guideline is under development.
+
+##Compiling Stylus
+To compile Stylus stylesheets into CSS, Stylus must me set to watch the CSS folder.
+
+From /themes/wikitongues, run:
+
+```bash
+stylus -u nib -w css
+```
+
 ## Development Map
 ### Version 0.1 DEPLOYED
 - [x] Wordpress core installation
@@ -20,7 +32,7 @@ Codebase for Wikitongues website
 - [ ] Mobile audit
 
 ### Version 0.3
-- [ ] Name your price integration with one-page checkout (Woocommerce) 
+- [ ] Name your price integration with one-page checkout (Woocommerce)
 - [ ] Dynamic tabs on pages
 - [ ] Social media meta tags
 - [ ] Quick donate module

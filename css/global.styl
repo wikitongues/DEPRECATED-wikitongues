@@ -6,22 +6,22 @@ body
 	font-family $serif
 	font-size 11pt
 
-.inner-wrap 
+.inner-wrap
 	position relative
 	width 100%
 	height 100%
-	
+
 .content-wrap
 	width 90%
 	max-width 1440px
 	margin 100px auto
-	
+
 .clear
 	clear both
 
 a, a:visited
 	text-decoration none
-	
+
 h1, h2, h3, h4, h5
 	font-family $sans_serif !important
 
@@ -35,13 +35,13 @@ div.cta-section
 	-o-transition background .2s ease-in-out
 	-ms-transition background .2s ease-in-out
 	transition background .2s ease-in-out
-	
+
 	&:hover
 		background $offwhite
-	
+
 	h1, p
 		margin 0 auto
-		
+
 	h1
 		max-width 750px
 
@@ -60,16 +60,16 @@ div.cta-section
 		font-family $sans_serif
 		font-weight 900
 		text-align center
-	
+
 	a.cta-secondary
 		color $deep_blue
 		font-style italic
-		
+
 		&:hover
 			border-bottom 1px solid $deep_blue
-	
 
-	
+
+
 /* page banners */
 
 .page-banner
@@ -83,7 +83,7 @@ div.cta-section
 	overflow-y hidden
 	font-size 0
 	// background-size cover !important
-	
+
 	h1
 		line-height 1.25em
 		-webkit-transition font-size .2s ease-in-out
@@ -91,16 +91,16 @@ div.cta-section
 		-ms-transition font-size .2s ease-in-out
 		-o-transition font-size .2s ease-in-out
 		transition font-size .2s ease-in-out
-		
+
 	.carousel-slide
 		display inline-block
 		position relative
 		width 100%
 		height 100%
-	
+
 		&.banner-video
 			overflow hidden
-			
+
 			#video
 				position absolute
 				top 50%
@@ -112,7 +112,7 @@ div.cta-section
 				height auto
 				min-width 101%
 				min-height 101%
-			
+
 			.video-caption
 				position absolute
 				bottom 100px
@@ -120,7 +120,7 @@ div.cta-section
 				text-align right
 				font-size 5rem
 				margin 0
-		
+
 		&.banner-text
 			h1
 				position absolute
@@ -133,7 +133,7 @@ div.cta-section
 				margin 0
 				// font-size 3rem
 				font-size 6rem
-		
+
 		&.banner-image
 			.title
 				margin 0
@@ -144,7 +144,7 @@ div.cta-section
 				font-size 5rem
 				text-align right
 				text-shadow 0 0 30px #11242f
-				
+
 			.caption
 				margin 0
 				position absolute
@@ -176,13 +176,13 @@ div.cta-section
 		-o-transition opacity .2s ease-in-out;
 		-ms-transition opacity .2s ease-in-out;
 		transition opacity .2s ease-in-out;
-		
+
 		&.slide-forward
 			right 20px
-		
+
 		&.slide-back
 			left 20px
-		
+
 		&.slide-down
 			top initial
 			left 50%
@@ -190,7 +190,7 @@ div.cta-section
 			webkit-transform translate(-50%, 0)
 			moz-transform translate(-50%, 0)
 			transform translate(-50%, 0)
-			
+
 		&:hover
 			opacity 1
 			cursor pointer
@@ -213,9 +213,9 @@ div.cta-section
 		left 50%
 		-webkit-transform translateX(-50%)
 		-moz-transform translateX(-50%)
-		transform translateX(-50%) 
+		transform translateX(-50%)
 		background $light_grey
-		
+
 	::after
 		content ""
 		width 50%
@@ -225,7 +225,7 @@ div.cta-section
 		left 50%
 		-webkit-transform translateX(-50%)
 		-moz-transform translateX(-50%)
-		transform translateX(-50%) 
+		transform translateX(-50%)
 		background $light_grey
 
 	h1
@@ -239,17 +239,17 @@ div.cta-section
 		width 66%
 		max-width 650px
 		margin auto
-		
+
 		p
 			font-size 1.25em
-	
+
 	.pull-quote
 		position relative
 		width 75%
 		max-width 650px
 		margin 0 auto
 		padding 50px
-		
+
 		::before
 			content ""
 			width 50%
@@ -259,9 +259,9 @@ div.cta-section
 			left 50%
 			-webkit-transform translateX(-50%)
 			-moz-transform translateX(-50%)
-			transform translateX(-50%) 
+			transform translateX(-50%)
 			background $light_grey
-			
+
 		::after
 			content ""
 			width 50%
@@ -271,17 +271,17 @@ div.cta-section
 			left 50%
 			-webkit-transform translateX(-50%)
 			-moz-transform translateX(-50%)
-			transform translateX(-50%) 
+			transform translateX(-50%)
 			background $light_grey
-		
+
 		h1
 			font-family $serif !important
 			text-align center
-		
+
 	.textwidget
 		p:first-of-type, h2:first-of-type
 			margin-top 0
-		
+
 /* donate banner */
 
 .donate-banner
@@ -292,7 +292,7 @@ div.cta-section
 	box-sizing border-box
 	background $blue_grey
 	font-family $sans_serif
-	
+
 	.close-button
 		position absolute
 		padding 0
@@ -300,11 +300,11 @@ div.cta-section
 		right 0
 		border 0
 		background none
-		font-size 2em 
-		
+		font-size 2em
+
 		&:focus
 			outline none
-			
+
 @media all and (max-height:700px)
 	.page-banner
 		h1
@@ -317,10 +317,10 @@ div.cta-section
 			font-size 4.5rem !important
 
 @media all and (max-width:980px) and (min-width:841px)
-	.page-banner 
+	.page-banner
 		h1
 			font-size 3.5rem !important
-	
+
 @media all and (max-width:840px) and (min-width:641px)
 	.page-banner
 		h1
@@ -328,77 +328,77 @@ div.cta-section
 
 @media all and (max-width:640px)
 	/* general styles */
-		
+
 	body
 		font-size 9pt
-	
+
 	.content-wrap
 		margin-top 20px
-	
+
 	/* page banners */
-	
+
 	.page-banner
 		height 35vh !important
-		
-		h1 
+
+		h1
 			width initial !important
 			font-size 1.5rem !important
 			white-space pre
-			
+
 			br
 				display none
-		
+
 		i
 			font-size 2rem !important
-			
+
 		.carousel-slide
 			&.banner-text
 				h1
 					width 80%
-			
+
 			&.banner-video
 				background-size cover !important
-				
+
 				#video
 					display none
-					
+
 				h1
 					width 40%
-			
+
 			&.banner-image
 				.caption
 					font-size .8rem
-				
+
 				i
 					display none !important
-	
+
 	/* section header */
-	
+
 	.info-header, .page-header
 		padding 20px 0
 		width 90%
 		margin 20px auto 40px
-				
+
 	/* page builder classes */
-	
+
 	.content-wrap
 		.panel-grid-cell
 			margin-bottom 20px !important
-			
+
 		.panel-grid
 			margin-bottom 20px !important
-			
+
 		.pull-quote
 			width 100% !important
 			padding 20px 0 !important
-			
+
 		.info-header
 			margin-top 50px !important
 			width 100%
-	
+
 
 	/* CTA section */
-	
+
 	.cta-section
 		padding 40px 10% 40px !important
 		background $offwhite
@@ -409,16 +409,16 @@ div.cta-section
 	// 	form.checkout.woocommerce-checkout
 	// 		width 100%
 	// 		margin auto
-			
+
 	// 		#opc-product-selection
 	// 			ul#checkout-products
 	// 				li.product-item
 	// 					width 48%
 	// 					margin-right 0 !important
-					
+
 	// 					&:nth-of-type(2n)
 	// 						margin-left 2%
-			
+
 	// 		#customer_details
 	// 			.woocommerce-billing-fields
 	// 				p.form-row
