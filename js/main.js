@@ -3,7 +3,6 @@ $(window).load(function(){
 })
 
 $(function(){
-	console.log('hi')
 	reponsiveIframe()
 	openLegal()
 	closeModule()
