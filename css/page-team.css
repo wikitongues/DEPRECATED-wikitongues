@@ -15,8 +15,6 @@ body.page-template-page-team .content-wrap .section-wrap#board .team-member:last
   border-right: none;
 }
 body.page-template-page-team .content-wrap .section-wrap#mentioned-volunteers .volunteers {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
   column-count: 3;
 }
 body.page-template-page-team .content-wrap .section-wrap .title {
@@ -86,8 +84,6 @@ body.page-template-page-team .content-wrap .section-wrap .team-member .personal-
   }
   body.page-template-page-team .content-wrap .section-wrap#mentioned-volunteers .volunteers,
   body.page-template-page-team .content-wrap #board#mentioned-volunteers .volunteers {
-    -webkit-column-count: 1 !important;
-    -moz-column-count: 1 !important;
     column-count: 1 !important;
   }
 }

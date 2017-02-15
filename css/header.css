@@ -33,7 +33,7 @@ header#header .menu-main-navigation-container {
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 header#header .menu-main-navigation-container ul {
   margin: 0;
