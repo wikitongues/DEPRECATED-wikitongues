@@ -19,7 +19,7 @@ header#header .menu-main-navigation-container {
   position: absolute;
   top: 50%;
   right: 10px;
-  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 header#header .menu-main-navigation-container ul {
   margin: 0;
@@ -67,10 +67,6 @@ header#header .menu-main-navigation-container ul li a:visited {
   color: $deep_blue;
   text-transform: uppercase;
   font-weight: 900;
-  -webkit-transition: color 0.1s ease-in-out;
-  -moz-transition: color 0.1s ease-in-out;
-  -o-transition: color 0.1s ease-in-out;
-  -ms-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 body.admin-bar header#header {
