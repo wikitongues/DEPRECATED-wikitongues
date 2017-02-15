@@ -1,19 +1,31 @@
 /* general styles */
 body {
-  padding-top: 50px;
-  color: $deep_blue;
+  color: $deepBlue;
   font-family: $serif;
   font-size: 11pt;
 }
-.inner-wrap {
+body .inner-wrap {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.content-wrap {
+body .content-wrap {
   width: 90%;
   max-width: 1440px;
-  margin: 100px auto;
+  margin: 50px auto;
+}
+body >.content-wrap a {
+  color: #000;
+  text-decoration: none;
+  padding: 0px 3px;
+  margin: 0 -3px;
+  box-shadow: 0 -5px 0 $yellow inset;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  transition: background-color 0.2s ease;
+}
+body >.content-wrap a:hover {
+  background-color: #ffd569;
 }
 .clear {
   clear: both;
@@ -27,7 +39,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $sans_serif !important;
+  font-family: $sansSerif !important;
 }
 /* call to action component */
 div.cta-section {
@@ -52,7 +64,7 @@ div.cta-section h1 {
 div.cta-section a.cta-button {
   display: block;
   max-width: 300px;
-  background: $light_blue;
+  background: $lightBlue;
   box-shadow: 0 1px 0 #336fb0;
   border-top: 1px solid #68abfd !important;
   border-radius: 2.5px;
@@ -61,24 +73,24 @@ div.cta-section a.cta-button {
   font-size: 20px;
   letter-spacing: 0.7px;
   color: $white;
-  font-family: $sans_serif;
+  font-family: $sansSerif;
   font-weight: 900;
   text-align: center;
 }
 div.cta-section a.cta-secondary {
-  color: $deep_blue;
+  color: $deepBlue;
   font-style: italic;
 }
 div.cta-section a.cta-secondary:hover {
-  border-bottom: 1px solid $deep_blue;
+  border-bottom: 1px solid $deepBlue;
 }
 /* page banners */
 .page-banner {
   position: relative;
-  height: 85vh;
+  height: 100vh;
   box-sizing: border-box;
   color: #fff;
-  font-family: $sans_serif;
+  font-family: $sansSerif;
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -86,10 +98,6 @@ div.cta-section a.cta-secondary:hover {
 }
 .page-banner h1 {
   line-height: 1.25em;
-  -webkit-transition: font-size 0.2s ease-in-out;
-  -moz-transition: font-size 0.2s ease-in-out;
-  -ms-transition: font-size 0.2s ease-in-out;
-  -o-transition: font-size 0.2s ease-in-out;
   transition: font-size 0.2s ease-in-out;
 }
 .page-banner .carousel-slide {
@@ -97,9 +105,12 @@ div.cta-section a.cta-secondary:hover {
   position: relative;
   width: 100%;
   height: 100%;
+  box-shadow: 0px -3px 0 #bd202f inset;
 }
 .page-banner .carousel-slide.banner-video {
   overflow: hidden;
+  top: -1px;
+  box-shadow: 0px -3px 0 #bd202f inset;
 }
 .page-banner .carousel-slide.banner-video #video {
   position: absolute;
@@ -120,6 +131,7 @@ div.cta-section a.cta-secondary:hover {
   text-align: right;
   font-size: 5rem;
   margin: 0;
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 .page-banner .carousel-slide.banner-text h1 {
   position: absolute;
@@ -138,9 +150,10 @@ div.cta-section a.cta-secondary:hover {
   color: $white;
   bottom: 80px;
   right: 40px;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: right;
   text-shadow: 0 0 30px #11242f;
+  line-height: 1em;
 }
 .page-banner .carousel-slide.banner-image .caption {
   margin: 0;
@@ -148,10 +161,10 @@ div.cta-section a.cta-secondary:hover {
   bottom: 0;
   right: 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   white-space: normal;
   text-align: left;
-  color: $deep_blue;
+  color: #6a7086;
   box-sizing: border-box;
   padding: 15px 25px;
   background: $white;
@@ -198,7 +211,7 @@ div.cta-section a.cta-secondary:hover {
   position: relative;
   width: 75%;
   max-width: 650px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   padding: 50px;
 }
 .info-header ::before,
@@ -212,7 +225,7 @@ div.cta-section a.cta-secondary:hover {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: $light_grey;
+  background: $lightGrey;
 }
 .info-header ::after,
 .page-header ::after {
@@ -225,7 +238,7 @@ div.cta-section a.cta-secondary:hover {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: $light_grey;
+  background: $lightGrey;
 }
 .info-header h1,
 .page-header h1 {
@@ -258,7 +271,7 @@ div.cta-section a.cta-secondary:hover {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: $light_grey;
+  background: $lightGrey;
 }
 .content-wrap .pull-quote ::after {
   content: "";
@@ -270,7 +283,7 @@ div.cta-section a.cta-secondary:hover {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: $light_grey;
+  background: $lightGrey;
 }
 .content-wrap .pull-quote h1 {
   font-family: $serif !important;
@@ -287,8 +300,8 @@ div.cta-section a.cta-secondary:hover {
   bottom: 0;
   padding: 15px 30px;
   box-sizing: border-box;
-  background: $blue_grey;
-  font-family: $sans_serif;
+  background: $blueGrey;
+  font-family: $sansSerif;
 }
 .donate-banner .close-button {
   position: absolute;
@@ -384,6 +397,6 @@ div.cta-section a.cta-secondary:hover {
   .cta-section {
     padding: 40px 10% 40px !important;
     background: $offwhite;
-    border-top: 1px solid $light_grey;
+    border-top: 1px solid $lightGrey;
   }
 }

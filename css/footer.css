@@ -1,15 +1,16 @@
 footer#footer {
-  padding: 100px 0;
+  padding: 70px 0 50px;
   text-align: center;
-  background: $deep_blue;
-  color: $white;
+  background: $deepBlue;
+  background: linear-gradient(45deg, #11242f 0%, #001e2f 100%);
+  color: $blueGrey;
 }
 footer#footer .content-wrap {
   margin: 0 auto;
 }
 footer#footer .content-wrap a,
 footer#footer .content-wrap a:visited {
-  color: $blue_grey;
+  color: $white;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -18,7 +19,7 @@ footer#footer .content-wrap a:visited {
 }
 footer#footer .content-wrap a:hover,
 footer#footer .content-wrap a:visited:hover {
-  color: $white;
+  color: $blueGrey;
 }
 footer#footer .content-wrap ul {
   padding: 0;
@@ -30,7 +31,7 @@ footer#footer .content-wrap ul.social {
 footer#footer .content-wrap ul li {
   display: inline-block;
   margin: 0 15px;
-  font-family: $sans_serif;
+  font-family: $sansSerif;
 }
 footer#footer .content-wrap ul#menu-footer-navigation {
   margin: 50px 0;

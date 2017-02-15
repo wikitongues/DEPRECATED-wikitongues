@@ -1,3 +1,14 @@
+function navScrollWatcher() {
+  $(document).scroll(function() {
+    var target = $(".page-banner").height()-50
+    if($(document).scrollTop() >= target) {
+      $("#header").addClass("scrolled")
+    } else {
+      $("#header").removeClass("scrolled")
+    }
+  })
+}
+
 function reponsiveIframe() {
    function setAspectRatio() {
       $('iframe').each(function() {
@@ -26,7 +37,7 @@ function openLegal() {
 
 function sectionTabs() {
 	$('.section-tabs li:first-of-type button').addClass('active')
-	
+
 	$('.section-tabs li button').on('click', function(){
 		var $targetId = $(this).attr('id')
 		$('.section-tabs li button.active').removeClass('active')
@@ -68,7 +79,7 @@ function carousel() {
 		if($('.carousel-slide').length>1){
 			$hasClickedOnCarousel = setTimeout(animateForward, 6500)
 		}
-		
+
 		$('.slide-back').click(function(){
 			animateBack()
 		})
