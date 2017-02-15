@@ -1,14 +1,15 @@
 $(window).load(function(){
-	// disableAutofill()
+  // disableAutofill()
 })
 
 $(function(){
-	reponsiveIframe()
-	openLegal()
-	closeModule()
-	carousel()
-	sectionTabs()
-	// setTimeout(introAnimate,300)
-	// setTimeout(bannerFade,7500)
+  reponsiveIframe()
+  openLegal()
+  closeModule()
+  carousel()
+  sectionTabs()
+  navScrollWatcher()
+  // setTimeout(introAnimate,300)
+  // setTimeout(bannerFade,7500)
 })
 

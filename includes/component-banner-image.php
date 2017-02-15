@@ -9,6 +9,6 @@ $caption = get_sub_field('caption');
 	<h1 class="title"><?php echo $title; ?></h1>
 <?php endif; ?>
 <?php if ( $caption ): ?>
-	<p class="caption"><?php echo $caption; ?></p>
+    	<p class="caption"><span><?php echo $caption; ?></span></p>
 <?php endif; ?>
 </div>

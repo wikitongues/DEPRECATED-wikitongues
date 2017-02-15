@@ -31,10 +31,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header id="header">
-<!--             <div class="inner-wrap">
-                <div id="logo"><?php the_custom_logo(); ?></div>
-                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-            </div> -->
             <div class="inner-wrap">
                 <!-- <div class="primary-nav"> -->
                     <div id="logo"><?php the_custom_logo(); ?></div>
