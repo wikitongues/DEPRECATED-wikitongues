@@ -45,10 +45,6 @@ h5 {
 div.cta-section {
   padding: 100px 0;
   text-align: center;
-  -webkit-transition: background 0.2s ease-in-out;
-  -moz-transition: background 0.2s ease-in-out;
-  -o-transition: background 0.2s ease-in-out;
-  -ms-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
 div.cta-section:hover {
@@ -136,8 +132,6 @@ div.cta-section a.cta-secondary:hover {
 .page-banner .carousel-slide.banner-text h1 {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 33%;
   max-width: 550px;
@@ -177,14 +171,8 @@ div.cta-section a.cta-secondary:hover {
   z-index: 10;
   font-size: 5rem;
   top: 50%;
-  webkit-transform: translateY(-50%);
-  moz-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0.3;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
 .page-banner i.fa.slide-forward {
@@ -197,8 +185,6 @@ div.cta-section a.cta-secondary:hover {
   top: initial;
   left: 50%;
   bottom: 20px;
-  webkit-transform: translate(-50%, 0);
-  moz-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 .page-banner i.fa:hover {
@@ -222,8 +208,6 @@ div.cta-section a.cta-secondary:hover {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   background: $lightGrey;
 }
@@ -235,8 +219,6 @@ div.cta-section a.cta-secondary:hover {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   background: $lightGrey;
 }
@@ -261,27 +243,14 @@ div.cta-section a.cta-secondary:hover {
   margin: 0 auto;
   padding: 50px;
 }
-.content-wrap .pull-quote ::before {
+.content-wrap .pull-quote ::before,
+.content-wrap .pull-quote ::after {
   content: "";
   width: 50%;
   height: 1px;
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: $lightGrey;
-}
-.content-wrap .pull-quote ::after {
-  content: "";
-  width: 50%;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   background: $lightGrey;
 }
