@@ -59,6 +59,10 @@ body.home footer#footer {
   color: $deepBlue;
 }
 .component.media {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 .component.media aside {
@@ -72,6 +76,8 @@ body.home footer#footer {
 .component.media aside:last-of-type {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 45%;
   padding: 0 7.5%;
@@ -118,6 +124,8 @@ body.home footer#footer {
     position: relative !important;
     width: 100% !important;
     float: none;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
     transform: none !important;
   }
   .component.media aside:last-of-type {
