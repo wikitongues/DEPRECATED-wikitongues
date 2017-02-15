@@ -1,14 +1,18 @@
 body.page-template-page-team .content-wrap .section-wrap {
-  margin-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid $blue_grey;
+  border-bottom: 1px solid $blueGrey;
+  width: 100%;
+  display: inline-block;
 }
 body.page-template-page-team .content-wrap .section-wrap:last-of-type {
   border-bottom: none;
 }
 body.page-template-page-team .content-wrap .section-wrap#board .team-member {
-  width: 32.5%;
-  margin-right: 0.5%;
+  width: 33.3333%;
+  margin-right: 0;
+}
+body.page-template-page-team .content-wrap .section-wrap#board .team-member:last-of-type {
+  border-right: none;
 }
 body.page-template-page-team .content-wrap .section-wrap#mentioned-volunteers .volunteers {
   column-count: 3;
@@ -19,9 +23,10 @@ body.page-template-page-team .content-wrap .section-wrap .title {
 }
 body.page-template-page-team .content-wrap .section-wrap .team-member {
   display: inline-block;
-  width: 24%;
-  margin: 0 1% 2% 0;
+  width: 25%;
+  margin: 0 0 2% 0;
   vertical-align: top;
+  float: left;
 }
 body.page-template-page-team .content-wrap .section-wrap .team-member:nth-of-type(4n) {
   margin-right: 0;
@@ -29,20 +34,20 @@ body.page-template-page-team .content-wrap .section-wrap .team-member:nth-of-typ
 body.page-template-page-team .content-wrap .section-wrap .team-member .headshot {
   display: inherit;
   width: 100%;
+  border: 5px solid #fff;
+  box-sizing: border-box;
   padding-bottom: 75%;
 }
 body.page-template-page-team .content-wrap .section-wrap .team-member .headshot.empty {
-  background: $blue_grey;
+  background: $blueGrey;
 }
 body.page-template-page-team .content-wrap .section-wrap .team-member .personal-info {
   text-align: left;
   font-size: 0.8em;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 5px;
 }
-@media all and (max-width: 1380px) {
-  body.page-template-page-team .content-wrap .section-wrap .team-member {
-    margin-right: 0.5%;
-  }
+body.page-template-page-team .content-wrap .section-wrap .team-member .personal-info span:nth-of-type(2) {
+  font-size: 0.6rem;
 }
 @media all and (max-width: 960px) and (min-width: 641px) {
   body.page-template-page-team .content-wrap .section-wrap .team-member {

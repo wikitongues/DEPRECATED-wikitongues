@@ -1,400 +1,406 @@
 /* general styles */
 
 body
-	padding-top 50px
-	color $deep_blue
-	font-family $serif
-	font-size 11pt
+  color $deepBlue
+  font-family $serif
+  font-size 11pt
 
-.inner-wrap
-	position relative
-	width 100%
-	height 100%
+  .inner-wrap
+    position relative
+    width 100%
+    height 100%
 
-.content-wrap
-	width 90%
-	max-width 1440px
-	margin 100px auto
+  .content-wrap
+    width 90%
+    max-width 1440px
+    margin 50px auto
+
+  >.content-wrap
+    a
+      color black
+      text-decoration none
+      padding 0px 3px
+      margin 0 -3px
+      box-shadow 0 -5px 0 $yellow inset
+      font-variant small-caps
+      text-transform lowercase
+      transition background-color .2s ease
+
+      &:hover
+        background-color lighten(#ffc328, 30%)
 
 .clear
-	clear both
+  clear both
 
 a, a:visited
-	text-decoration none
+  text-decoration none
 
 h1, h2, h3, h4, h5
-	font-family $sans_serif !important
+  font-family $sansSerif !important
 
 /* call to action component */
 
 div.cta-section
-	padding 100px 0
-	text-align center
-	transition background .2s ease-in-out
+  padding 100px 0
+  text-align center
+  transition background .2s ease-in-out
 
-	&:hover
-		background $offwhite
+  &:hover
+   background $offwhite
 
-	h1, p
-		margin 0 auto
+  h1, p
+   margin 0 auto
 
-	h1
-		max-width 750px
+  h1
+   max-width 750px
 
-	a.cta-button
-		display block
-		max-width 300px
-		background $light_blue
-		box-shadow 0 1px 0 #336FB0
-		border-top 1px solid #68ABFD !important
-		border-radius 2.5px
-		padding 25px
-		margin 50px auto
-		font-size 20px
-		letter-spacing 0.7px
-		color $white
-		font-family $sans_serif
-		font-weight 900
-		text-align center
+  a.cta-button
+   display block
+   max-width 300px
+   background $lightBlue
+   box-shadow 0 1px 0 #336FB0
+   border-top 1px solid #68ABFD !important
+   border-radius 2.5px
+   padding 25px
+   margin 50px auto
+   font-size 20px
+   letter-spacing 0.7px
+   color $white
+   font-family $sansSerif
+   font-weight 900
+   text-align center
 
-	a.cta-secondary
-		color $deep_blue
-		font-style italic
+  a.cta-secondary
+   color $deepBlue
+   font-style italic
 
-		&:hover
-			border-bottom 1px solid $deep_blue
-
-
+   &:hover
+     border-bottom 1px solid $deepBlue
 
 /* page banners */
 
 .page-banner
-	position relative
-	height 85vh
-	box-sizing border-box
-	color #fff
-	font-family $sans_serif
-	white-space nowrap
-	overflow-x scroll
-	overflow-y hidden
-	font-size 0
-	// background-size cover !important
+  position relative
+  height 100vh
+  box-sizing border-box
+  color #fff
+  font-family $sansSerif
+  white-space nowrap
+  overflow-x scroll
+  overflow-y hidden
+  font-size 0
 
-	h1
-		line-height 1.25em
-		transition font-size .2s ease-in-out
+  h1
+   line-height 1.25em
+   transition font-size .2s ease-in-out
 
-	.carousel-slide
-		display inline-block
-		position relative
-		width 100%
-		height 100%
+  .carousel-slide
+   display inline-block
+   position relative
+   width 100%
+   height 100%
+   box-shadow 0px -3px 0 #bd202f inset
 
-		&.banner-video
-			overflow hidden
+   &.banner-video
+     overflow hidden
+     top -1px
+     box-shadow 0px -3px 0 #bd202f inset
 
-			#video
-				position absolute
-				top 50%
-				left 50%
-				transform translate(-50%, -50%)
-				width auto !important
-				height auto
-				min-width 101%
-				min-height 101%
+     #video
+      position absolute
+      top 50%
+      left 50%
+      webkit-transform translate(-50%, -50%)
+      moz-transform translate(-50%, -50%)
+      transform translate(-50%, -50%)
+      width auto !important
+      height auto
+      min-width 101%
+      min-height 101%
 
-			.video-caption
-				position absolute
-				bottom 100px
-				right 80px
-				text-align right
-				font-size 5rem
-				margin 0
+     .video-caption
+      position absolute
+      bottom 100px
+      right 80px
+      text-align right
+      font-size 5rem
+      margin 0
+      text-shadow 1px 1px rgba(0,0,0,0.1)
 
-		&.banner-text
-			h1
-				position absolute
-				top 50%
-				transform translateY(-50%)
-				width 33%
-				max-width 550px
-				margin 0
-				// font-size 3rem
-				font-size 6rem
+   &.banner-text
+     h1
+      position absolute
+      top 50%
+      transform translateY(-50%)
+      width 33%
+      max-width 550px
+      margin 0
+      font-size 6rem
 
-		&.banner-image
-			.title
-				margin 0
-				position absolute
-				color $white
-				bottom 80px
-				right 40px
-				font-size 5rem
-				text-align right
-				text-shadow 0 0 30px #11242f
+   &.banner-image
+     .title
+      margin 0
+      position absolute
+      color $white
+      bottom 80px
+      right 40px
+      font-size 4rem
+      text-align right
+      text-shadow 0 0 30px #11242f
+      line-height 1em
 
-			.caption
-				margin 0
-				position absolute
-				bottom 0
-				right 0
-				width 100%
-				font-size 1rem
-				white-space normal
-				text-align left
-				color $deep_blue
-				box-sizing border-box
-				padding 15px 25px
-				background $white
-				font-family $serif
-				font-style italic
+     .caption
+      margin 0
+      position absolute
+      bottom 0
+      right 0
+      width 100%
+      font-size .8rem
+      white-space normal
+      text-align left
+      color #6a7086
+      box-sizing border-box
+      padding 15px 25px
+      background $white
+      font-family $serif
+      font-style italic
 
-	i.fa
-		display none
-		position absolute
-		z-index 10
-		font-size 5rem
-		top 50%
-		transform translateY(-50%)
-		opacity .3
-		transition opacity .2s ease-in-out
+  i.fa
+   display none
+   position absolute
+   z-index 10
+   font-size 5rem
+   top 50%
+   transform translateY(-50%)
+   opacity .3
+   transition opacity .2s ease-in-out
 
-		&.slide-forward
-			right 20px
+   &.slide-forward
+     right 20px
 
-		&.slide-back
-			left 20px
+   &.slide-back
+     left 20px
 
-		&.slide-down
-			top initial
-			left 50%
-			bottom 20px
-			transform translate(-50%, 0)
+   &.slide-down
+     top initial
+     left 50%
+     bottom 20px
+     transform translate(-50%, 0)
 
-		&:hover
-			opacity 1
-			cursor pointer
+   &:hover
+     opacity 1
+     cursor pointer
 
 /* section header */
 
 .info-header, .page-header
-	position relative
-	width 75%
-	max-width 650px
-	margin 100px auto 0
-	padding 50px
+  position relative
+  width 75%
+  max-width 650px
+  margin 50px auto 0
+  padding 50px
 
-	::before
-		content ""
-		width 50%
-		height 1px
-		position absolute
-		top 0
-		left 50%
-		transform translateX(-50%)
-		background $light_grey
+  ::before
+   content ""
+   width 50%
+   height 1px
+   position absolute
+   top 0
+   left 50%
+   transform translateX(-50%)
+   background $lightGrey
 
-	::after
-		content ""
-		width 50%
-		height 1px
-		position absolute
-		bottom 0
-		left 50%
-		transform translateX(-50%)
-		background $light_grey
+  ::after
+   content ""
+   width 50%
+   height 1px
+   position absolute
+   bottom 0
+   left 50%
+   transform translateX(-50%)
+   background $lightGrey
 
-	h1
-		font-family $serif !important
-		text-align center
+  h1
+   font-family $serif !important
+   text-align center
 
 /* page builder classes */
 
 .content-wrap
-	.info-header
-		width 66%
-		max-width 650px
-		margin auto
+  .info-header
+   width 66%
+   max-width 650px
+   margin auto
 
-		p
-			font-size 1.25em
+   p
+     font-size 1.25em
 
-	.pull-quote
-		position relative
-		width 75%
-		max-width 650px
-		margin 0 auto
-		padding 50px
+  .pull-quote
+   position relative
+   width 75%
+   max-width 650px
+   margin 0 auto
+   padding 50px
 
-		::before
-			content ""
-			width 50%
-			height 1px
-			position absolute
-			top 0
-			left 50%
-			transform translateX(-50%)
-			background $light_grey
+   ::before, ::after
+     content ""
+     width 50%
+     height 1px
+     position absolute
+     top 0
+     left 50%
+     transform translateX(-50%)
+     background $lightGrey
 
-		::after
-			content ""
-			width 50%
-			height 1px
-			position absolute
-			bottom 0
-			left 50%
-			transform translateX(-50%)
-			background $light_grey
+   h1
+     font-family $serif !important
+     text-align center
 
-		h1
-			font-family $serif !important
-			text-align center
-
-	.textwidget
-		p:first-of-type, h2:first-of-type
-			margin-top 0
+  .textwidget
+   p:first-of-type, h2:first-of-type
+     margin-top 0
 
 /* donate banner */
 
 .donate-banner
-	position fixed
-	width 100%
-	bottom 0
-	padding 15px 30px
-	box-sizing border-box
-	background $blue_grey
-	font-family $sans_serif
+  position fixed
+  width 100%
+  bottom 0
+  padding 15px 30px
+  box-sizing border-box
+  background $blueGrey
+  font-family $sansSerif
 
-	.close-button
-		position absolute
-		padding 0
-		top 0
-		right 0
-		border 0
-		background none
-		font-size 2em
+  .close-button
+   position absolute
+   padding 0
+   top 0
+   right 0
+   border 0
+   background none
+   font-size 2em
 
-		&:focus
-			outline none
+   &:focus
+     outline none
 
 @media all and (max-height:700px)
-	.page-banner
-		h1
-			font-size 4.5rem !important
+  .page-banner
+   h1
+     font-size 4.5rem !important
 
 
 @media all and (max-width:1300px) and (min-width:981px)
-	.page-banner
-		h1
-			font-size 4.5rem !important
+  .page-banner
+   h1
+     font-size 4.5rem !important
 
 @media all and (max-width:980px) and (min-width:841px)
-	.page-banner
-		h1
-			font-size 3.5rem !important
+  .page-banner
+   h1
+     font-size 3.5rem !important
 
 @media all and (max-width:840px) and (min-width:641px)
-	.page-banner
-		h1
-			font-size 2.5rem !important
+  .page-banner
+   h1
+     font-size 2.5rem !important
 
 @media all and (max-width:640px)
-	/* general styles */
+  /* general styles */
 
-	body
-		font-size 9pt
+  body
+   font-size 9pt
 
-	.content-wrap
-		margin-top 20px
+  .content-wrap
+   margin-top 20px
 
-	/* page banners */
+  /* page banners */
 
-	.page-banner
-		height 35vh !important
+  .page-banner
+   height 35vh !important
 
-		h1
-			width initial !important
-			font-size 1.5rem !important
-			white-space pre
+   h1
+     width initial !important
+     font-size 1.5rem !important
+     white-space pre
 
-			br
-				display none
+     br
+      display none
 
-		i
-			font-size 2rem !important
+   i
+     font-size 2rem !important
 
-		.carousel-slide
-			&.banner-text
-				h1
-					width 80%
+   .carousel-slide
+     &.banner-text
+      h1
+        width 80%
 
-			&.banner-video
-				background-size cover !important
+     &.banner-video
+      background-size cover !important
 
-				#video
-					display none
+      #video
+        display none
 
-				h1
-					width 40%
+      h1
+        width 40%
 
-			&.banner-image
-				.caption
-					font-size .8rem
+     &.banner-image
+      .caption
+        font-size .8rem
 
-				i
-					display none !important
+      i
+        display none !important
 
-	/* section header */
+  /* section header */
 
-	.info-header, .page-header
-		padding 20px 0
-		width 90%
-		margin 20px auto 40px
+  .info-header, .page-header
+   padding 20px 0
+   width 90%
+   margin 20px auto 40px
 
-	/* page builder classes */
+  /* page builder classes */
 
-	.content-wrap
-		.panel-grid-cell
-			margin-bottom 20px !important
+  .content-wrap
+   .panel-grid-cell
+     margin-bottom 20px !important
 
-		.panel-grid
-			margin-bottom 20px !important
+   .panel-grid
+     margin-bottom 20px !important
 
-		.pull-quote
-			width 100% !important
-			padding 20px 0 !important
+   .pull-quote
+     width 100% !important
+     padding 20px 0 !important
 
-		.info-header
-			margin-top 50px !important
-			width 100%
+   .info-header
+     margin-top 50px !important
+     width 100%
 
 
-	/* CTA section */
+  /* CTA section */
 
-	.cta-section
-		padding 40px 10% 40px !important
-		background $offwhite
-		border-top 1px solid $light_grey
+  .cta-section
+   padding 40px 10% 40px !important
+   background $offwhite
+   border-top 1px solid $lightGrey
 
-	/* donate form */
-	// .wcopc
-	// 	form.checkout.woocommerce-checkout
-	// 		width 100%
-	// 		margin auto
+  /* donate form */
+  // .wcopc
+  //   form.checkout.woocommerce-checkout
+  //    width 100%
+  //    margin auto
 
-	// 		#opc-product-selection
-	// 			ul#checkout-products
-	// 				li.product-item
-	// 					width 48%
-	// 					margin-right 0 !important
+  //    #opc-product-selection
+  //      ul#checkout-products
+  //       li.product-item
+  //         width 48%
+  //         margin-right 0 !important
 
-	// 					&:nth-of-type(2n)
-	// 						margin-left 2%
+  //         &:nth-of-type(2n)
+  //          margin-left 2%
 
-	// 		#customer_details
-	// 			.woocommerce-billing-fields
-	// 				p.form-row
-	// 					&:nth-of-type(3),
-	// 					&:nth-of-type(4),
-	// 					&:nth-of-type(5)
-	// 						width 100%
+  //    #customer_details
+  //      .woocommerce-billing-fields
+  //       p.form-row
+  //         &:nth-of-type(3),
+  //         &:nth-of-type(4),
+  //         &:nth-of-type(5)
+  //          width 100%
