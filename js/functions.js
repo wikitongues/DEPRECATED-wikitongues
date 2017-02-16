@@ -6,7 +6,6 @@ function navScrollWatcher() {
 
 function dynamicNav() {
   var target = $(".page-banner").height()-100
-  console.log(target)
   if($(document).scrollTop() >= target) {
     $("#header").addClass("scrolled")
   } else {

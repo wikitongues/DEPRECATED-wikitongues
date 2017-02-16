@@ -254,6 +254,10 @@ div.cta-section a.cta-secondary:hover {
   transform: translateX(-50%);
   background: $lightGrey;
 }
+.content-wrap .pull-quote ::after {
+  top: initial;
+  bottom: 0;
+}
 .content-wrap .pull-quote h1 {
   font-family: $serif !important;
   text-align: center;

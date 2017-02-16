@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // register navigation menu support
 function register_my_menus() {
@@ -10,7 +10,7 @@ function register_my_menus() {
     )
   );
 }
-add_action( 'init', 'register_my_menus'); 
+add_action( 'init', 'register_my_menus');
 
 // register thumbnail support
 add_theme_support( 'post-thumbnails' );
@@ -28,32 +28,32 @@ function woocommerce_support() {
 }
 
 // register acf options page
-if( function_exists('acf_add_options_page') ) {  
-    acf_add_options_page();   
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
 }
 
 // test if featured product is in cart
 function wt_is_in_cart($product_id) {
     global $woocommerce;
- 
+
     foreach($woocommerce->cart->get_cart() as $key => $val ) {
         $_product = $val['data'];
- 
+
         if($product_id == $_product->id ) {
             return true;
         }
     }
- 
+
     return false;
 }
 
 // return featured product quantity count
 function wt_get_cart_count($product_id) {
     global $woocommerce;
- 
+
     foreach($woocommerce->cart->get_cart() as $key => $val ) {
         $_product = $val['data'];
- 
+
         if($product_id == $_product->id ) {
         	echo $val['quantity'];
         }
@@ -81,8 +81,8 @@ function custom_override_checkout_fields( $fields ) {
     $fields['billing']['billing_postcode']['label'] = 'What\'s your postal code?';
     $fields['billing']['billing_email']['label'] = 'What\'s your email?';
     $fields['billing']['billing_phone']['label'] = 'What\'s your phone number?';
-    $fields['order']['order_comments']['label'] = 'Why does Wikitongues matter to you? (optional)';
-    $fields['order']['order_comments']['placeholder'] = '';
+    $fields['order']['order_comments']['label'] = 'Why does Wikitongues matter to you? (Optional)';
+    $fields['order']['order_comments']['placeholder'] = 'Tell us why you care about language rights!';
     unset($fields['billing']['billing_company']);
     unset($fields['billing']['billing_address_1']);
     unset($fields['billing']['billing_address_2']);
@@ -94,14 +94,14 @@ function custom_override_checkout_fields( $fields ) {
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 // Override default 'place order' on checkout submit
-add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' ); 
+add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' );
 
 function woo_custom_order_button_text() {
-    return __( 'Donate now', 'woocommerce' ); 
+    return __( 'Donate now', 'woocommerce' );
 }
 
 // Thank you notification
-add_action( 'template_redirect', 'wc_custom_redirect_after_purchase' ); 
+add_action( 'template_redirect', 'wc_custom_redirect_after_purchase' );
 function wc_custom_redirect_after_purchase() {
     global $wp;
 
