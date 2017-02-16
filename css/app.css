@@ -848,7 +848,7 @@ body.page-id-193 .section-tabs li {
 }
 body.page-template-page-form .section-tabs li button,
 body.page-id-193 .section-tabs li button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, sans-serif;
   background: none;
   border: 0;
   font-size: 2em;
@@ -880,213 +880,380 @@ body.page-template-page-form footer#footer,
 body.page-id-193 footer#footer {
   margin-top: 100px;
 }
-.form-page form ul {
-  padding: 0;
-}
-.form-page form ul li {
-  list-style-type: none;
-}
-.form-page form label {
-  display: block;
-  font-style: italic;
-}
-.form-page form input,
-.form-page form textarea {
-  width: 100%;
-  margin: 0 0 40px;
+.form-page form {
+  width: 600px;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 3px solid #11242f;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: #78858a;
-}
-.form-page form input:focus,
-.form-page form textarea:focus {
-  margin-top: 10px;
-  background: #f7f7f7 !important;
-  outline: none;
-  border-bottom: 3px solid #ffc328;
-}
-.form-page form textarea {
-  height: 41px;
-  resize: none;
-}
-.form-page form textarea:focus {
-  height: 200px;
-}
-.form-page form fieldset label,
-.form-page form .checkbox label,
-.form-page form fieldset input,
-.form-page form .checkbox input {
-  width: initial;
-  display: inline-block;
-}
-.form-page form fieldset label,
-.form-page form .checkbox label {
-  font-style: normal;
-}
-.form-page form fieldset input,
-.form-page form .checkbox input {
-  margin-right: 10px;
-  margin-bottom: 20px;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-}
-.form-page form fieldset input:focus,
-.form-page form .checkbox input:focus {
-  margin-top: 0 !important;
-}
-.form-page form fieldset legend {
-  font-style: italic;
-}
-.form-page form .insetWrapper {
-  display: none;
-  position: relative;
-  margin: 0 0 20px;
-  padding: 30px;
-  background: #f7f7f7;
-}
-.form-page form .insetWrapper .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-  color: #4799fc;
+  overflow: hidden;
+  background: #fff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.015em;
 }
-.form-page form .grouping.legal {
-  width: 100%;
-}
-.form-page form .grouping.legal h2,
-.form-page form .grouping.legal .open-legal {
-  float: left;
-}
-.form-page form .grouping.legal .open-legal {
-  color: #4799fc;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.015em;
-  padding: 25px 25px 0px;
-  cursor: pointer;
-  display: block;
-}
-.form-page form .grouping.legal .inset {
-  width: 95%;
-  color: #78858a;
-}
-.form-page form .grouping.legal .inset a {
-  color: #78858a;
-  border-bottom: 1px solid #78858a;
-  padding-bottom: 2px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.form-page form .grouping.legal .inset a:hover {
-  color: #11242f;
-  border-bottom: 1px solid #11242f;
-}
-.form-page form .grouping.legal ol li {
-  margin-bottom: 10px;
-}
-.form-page form input[type="submit"] {
+.form-page form h2 {
+  width: 600px;
+  padding: 15px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 0 -30px;
   background: #4799fc;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  padding: 25px 0;
-  margin: 50px 0;
-  font-size: 20px;
-  letter-spacing: 0.7px;
-  -webkit-border-radius: 2.5px;
-  border-radius: 2.5px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid #11242f;
-}
-.form-page .wcopc #opc-messages,
-.form-page .wcopc .woocommerce-info {
-  display: none !important;
-}
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products {
-  margin-bottom: 40px;
-}
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products::before {
-  content: "How Much Can You Contribute?";
-  display: block;
-  font-family: 'roboto', sans-serif;
-  font-weight: 900;
-  font-size: 1.17em;
-  margin-bottom: 1em;
-}
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li {
   display: inline-block;
-  margin-right: 40px;
+  float: left;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.attributes,
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.dash,
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li span.price {
+.form-page form .grouping {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto 50px;
+  display: inline-block;
+  float: left;
+}
+.form-page form .grouping:last-of-type {
+  width: 600px;
+  margin-left: -30px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.form-page form .grouping .input {
+  position: relative;
+  margin-top: 35px;
+  float: left;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.form-page form .grouping .input.hidden {
+  height: 0px;
+  margin-top: 0px;
+}
+.form-page form .grouping .input.checkbox {
+  margin-top: 0;
+  padding: 10px 11px;
+}
+.form-page form .grouping .input.checkbox:nth-of-type(1),
+.form-page form .grouping .input.checkbox:nth-of-type(2) {
+  margin-top: 35px;
+}
+.form-page form .grouping .input.col-1 {
+  width: 50%;
+}
+.form-page form .grouping .input.col-1:nth-of-type(n) {
+  padding-right: 11px;
+}
+.form-page form .grouping .input.col-1:nth-of-type(2n) {
+  padding-left: 11px;
+}
+.form-page form .grouping .input.col-1:nth-of-type(2n) label {
+  left: 20px;
+}
+.form-page form .grouping .input.col-2 {
+  width: 100%;
+}
+.form-page form .grouping .input textarea {
+  resize: vertical;
+}
+.form-page form .grouping .input input,
+.form-page form .grouping .input textarea {
+  display: block;
+}
+.form-page form .grouping .input input,
+.form-page form .grouping .input textarea,
+.form-page form .grouping .input .hiddenDiv {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 11px;
+  min-height: 32px;
+  font-family: 'Roboto', sans-serif, sans-serif;
+  color: #000;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-page form .grouping .input input:focus,
+.form-page form .grouping .input textarea:focus,
+.form-page form .grouping .input .hiddenDiv:focus {
+  outline: none;
+}
+.form-page form .grouping .input input:focus ~ .bar::before,
+.form-page form .grouping .input textarea:focus ~ .bar::before,
+.form-page form .grouping .input .hiddenDiv:focus ~ .bar::before,
+.form-page form .grouping .input input:focus ~ .bar::after,
+.form-page form .grouping .input textarea:focus ~ .bar::after,
+.form-page form .grouping .input .hiddenDiv:focus ~ .bar::after {
+  width: 50%;
+}
+.form-page form .grouping .input input:focus ~ .highlight,
+.form-page form .grouping .input textarea:focus ~ .highlight,
+.form-page form .grouping .input .hiddenDiv:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  -o-animation: inputHighlighter 0.3s ease;
+  -ms-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+.form-page form .grouping .input input:focus ~ label,
+.form-page form .grouping .input textarea:focus ~ label,
+.form-page form .grouping .input .hiddenDiv:focus ~ label {
+  top: -11px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #000;
+}
+.form-page form .grouping .input input.used ~ label,
+.form-page form .grouping .input textarea.used ~ label,
+.form-page form .grouping .input .hiddenDiv.used ~ label {
+  top: -11px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.form-page form .grouping .input label {
+  color: #a9a9a9;
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+.form-page form .grouping .input .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.form-page form .grouping .input .bar::before,
+.form-page form .grouping .input .bar::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffc328;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+.form-page form .grouping .input .bar::before {
+  left: 50%;
+}
+.form-page form .grouping .input .bar::after {
+  right: 50%;
+}
+.form-page form .grouping .input .highlight {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  top: 12px;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.form-page form .grouping fieldset {
+  border: none;
+  padding: 0 0 0 10px;
+  margin: 35px 0 0 0;
+}
+.form-page form .grouping fieldset legend {
+  color: #a9a9a9;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.form-page form .grouping fieldset ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.form-page form .grouping fieldset ul li {
+  padding: 10px 0;
+}
+.form-page form .grouping fieldset ul li label {
+  font-weight: 300;
+  margin-left: 10px;
+  color: #a9a9a9;
+}
+.form-page form .grouping fieldset ul li input:checked ~ label {
+  color: #000;
+}
+.form-page form .grouping#release h2,
+.form-page form .grouping#publicityClause h2,
+.form-page form .grouping#codeOfEthics h2 {
+  float: left;
+}
+.form-page form .grouping a {
+  text-decoration: none;
+  cursor: pointer;
+  font-variant: initial;
+  font-family: 'Roboto', sans-serif;
+}
+.form-page form .grouping a.open-legal {
+  display: initial;
+}
+.form-page form .grouping a.close-button {
   display: none;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li label {
-  display: inline;
+.form-page form .grouping.inset {
+  margin-bottom: 10px;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #opc-product-selection ul#checkout-products li label input {
-  width: initial;
-  margin: auto;
+.form-page form .grouping.inset .terms {
+  font-size: 0.7rem;
+  background: #fff;
+  padding: 10px 20px;
+  border: 1px solid #4799fc;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #4799fc;
+  border-color: initial;
+  color: initial;
+  text-align: justify;
+  line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout .create-account {
-  display: none !important;
+.form-page form .grouping.inset .terms ol {
+  padding-left: 20px;
+  margin-right: 20px;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout abbr.required {
-  text-decoration: none;
-  border-bottom: none;
+.form-page form .grouping.inset .terms ol li {
+  padding-left: 5px;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #order_review .opc_order_review {
-  display: none !important;
+.form-page form .grouping.inset .input.checkbox {
+  margin-top: 10px;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method {
-  margin-top: 40px;
+.form-page form .grouping.inset.open .insetWrapper {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method:first-of-type {
-  margin-top: 0;
+.form-page form .grouping.inset.open a.open-legal {
+  display: none;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method input.input-radio {
-  width: initial;
+.form-page form .grouping.inset.open a.close-button {
+  display: initial;
+}
+.form-page form .grouping .insetWrapper {
+  display: block;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  padding: 5px;
+  margin: 10px -5px -5px;
+  -webkit-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+  -o-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+  transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+}
+.form-page form .grouping#releaseForm.inset.open .insetWrapper {
+  height: 295px;
+}
+.form-page form .grouping#publicityClause.inset.open .insetWrapper {
+  height: 215px;
+}
+.form-page form .grouping#codeOfEthics.inset.open .insetWrapper {
+  height: 390px;
+  display: block;
+}
+.form-page form .grouping .inset {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  float: left;
   display: inline-block;
+  clear: both;
+  padding: 30px;
+  background: #fff;
 }
-.form-page .wcopc form.checkout.woocommerce-checkout #order_review #payment .wc_payment_methods .wc_payment_method label {
-  display: inline-block;
+.form-page form .grouping .inset p {
+  width: 100%;
+  margin: 0;
+}
+.form-page form .grouping .inset p em {
+  width: 100%;
+}
+.form-page form .grouping .inset ol {
+  padding-left: 20px;
+  margin-bottom: 1em;
+  text-align: justify;
+  width: 100%;
+  margin: 15px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-page form .grouping .inset ol li {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.form-page form .grouping .inset ol li a {
+  font-family: 'Libre Baskerville', serif;
+  float: none;
+}
+.form-page form .grouping .checkbox input {
+  width: auto;
+  float: left;
+  margin-top: 6px !important;
+  min-height: initial;
+}
+.form-page form .grouping .checkbox input:focus ~ label,
+.form-page form .grouping .checkbox input:valid ~ label {
+  top: initial;
+  font-size: 16px;
+  line-height: 1.8rem;
+  font-weight: 100;
+  color: #a9a9a9;
+}
+.form-page form .grouping .checkbox label {
+  margin-left: 10px;
+  float: left;
+  position: initial;
+  line-height: 1.8rem;
+}
+.form-page form .grouping .submit-button {
+  font-family: 'Roboto', sans-serif;
+  background: #4799fc;
+  width: 600px;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.noscroll {
+  overflow: hidden;
+}
+.hiddenDiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .form-success {
   position: fixed;
@@ -1101,7 +1268,7 @@ body.page-id-193 footer#footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10% 20%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
@@ -1132,6 +1299,42 @@ body.page-id-193 footer#footer {
   }
   .form-page form .insetWrapper {
     padding: 40px 30px 30px 30px !important;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #ffc328;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #ffc328;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-o-keyframes inputHighlighter {
+  from {
+    background: #ffc328;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #ffc328;
+  }
+  to {
+    width: 0;
+    background: transparent;
   }
 }
 body.woocommerce-checkout .woocommerce,

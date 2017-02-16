@@ -14,7 +14,7 @@ body
       margin 0 10px
 
       button
-        font-family 'Roboto', sans-serif
+        font-family $sansSerif, sans-serif
         background none
         border 0
         font-size 2em
@@ -22,7 +22,7 @@ body
         text-transform capitalize
 
         &.active
-         border-bottom 3px solid #ffc328
+         border-bottom 3px solid $yellow
 
         &:focus
          outline none
@@ -43,199 +43,341 @@ body
 // form css
 .form-page
   form
-   ul
-     padding 0
+    width 600px
+    box-shadow 0 2px 4px rgba(0,0,0,0.15)
+    border-radius 4px
+    padding 0 30px
+    box-sizing border-box
+    overflow hidden
+    background white
+    font-family $sansSerif
 
-     li
-      list-style-type none
-
-   label
-     display block
-     font-style italic
-
-   input, textarea
-     width 100%
-     margin 0 0 40px
-     box-sizing border-box
-     padding 10px
-     border-top 0
-     border-left 0
-     border-right 0
-     border-bottom 3px solid #11242f
-     -webkit-transition all .2s ease-in-out
-     -moz-transition all .2s ease-in-out
-     -ms-transition all .2s ease-in-out
-     -o-transition all .2s ease-in-out
-     transition all .2s ease-in-out
-     color #78858a
-
-     &:focus
-      margin-top 10px
-      background #f7f7f7 !important
-      outline none
-      border-bottom 3px solid #ffc328
-
-   textarea
-     height 41px
-     resize none
-
-     &:focus
-      height 200px
-
-   fieldset, .checkbox
-     label, input
-      width initial
-      display inline-block
-
-     label
-      font-style normal
-
-     input
-      margin-right 10px
-      margin-bottom 20px
-      -webkit-transition none
-      -moz-transition none
-      -ms-transition none
-      -o-transition none
-      transition none
-
-      &:focus
-        margin-top 0 !important
-
-   fieldset
-     legend
-      font-style italic
-
-   .insetWrapper
-     display none
-     position relative
-     margin 0 0 20px
-     padding 30px
-     background #f7f7f7
-
-     .close-button
-      position absolute
-      top 10px
-      right 10px
-      padding 5px 10px
-      cursor pointer
-      color #4799fc
-      font-family 'Roboto', sans-serif
-      font-weight 900
-      letter-spacing 0.015em
-
-   .grouping
-     &.legal
-      width 100%
-
-      h2, .open-legal
+    h2
+        width 600px
+        padding 15px 30px
+        box-sizing border-box
+        margin 0 0 0 -30px
+        background $lightBlue
+        color white
+        display inline-block
         float left
 
-      .open-legal
-        color #4799fc
-        font-family 'Roboto', sans-serif
-        font-weight 900
-        letter-spacing 0.015em
-        padding 25px 25px 0px
+    .grouping
+      width 100%
+      padding 0
+      margin 0 auto 50px
+      display inline-block
+      float left
+
+      &:last-of-type
+        width 600px
+        margin-left -30px
+        margin-bottom 0
+        display inline-block
+
+      .input
+        position relative
+        margin-top 35px
+        float left
+        transition all .3s ease
+        box-sizing border-box
+        font-family $sansSerif
+
+        &.hidden
+          height 0px
+          margin-top 0px
+
+        &.checkbox
+          margin-top 0
+          padding 10px 11px
+
+          &:nth-of-type(1),
+          &:nth-of-type(2)
+            margin-top 35px
+
+        &.col-1
+          width 50%
+
+          &:nth-of-type(n)
+            padding-right 11px
+
+          &:nth-of-type(2n)
+            padding-left 11px
+
+            label
+              left 20px
+
+        &.col-2
+          width 100%
+
+        textarea
+          resize vertical
+
+        input,
+        textarea
+          display block
+
+        input,
+        textarea,
+        .hiddenDiv
+          font-size 18px
+          font-weight 300
+          margin-top 11px
+          min-height 32px
+          font-family $sansSerif, sans-serif
+          color #000
+          padding 0 10px 10px 10px
+          width 100%
+          border none
+          border-bottom 1px solid #e5e5e6
+          box-sizing border-box
+
+          &:focus
+            outline none
+
+            & ~ .bar::before,
+            & ~ .bar::after
+              width 50%
+
+            & ~ .highlight
+              animation inputHighlighter 0.3s ease
+
+            & ~ label
+              top -11px
+              font-size 12px
+              font-weight 200
+              color #000
+
+          &.used ~ label
+            top -11px
+            font-size 12px
+            font-weight 200
+
+        label
+          color #a9a9a9
+          font-size 16px
+          font-weight 100
+          position absolute
+          pointer-events none
+          left 10px
+          top 10px
+          transition 0.2s ease all
+
+        .bar
+          position relative
+          display block
+          width 100%
+
+          &::before,
+          &::after
+            content ''
+            height 3px
+            width 0
+            bottom 0
+            position absolute
+            background $yellow
+            transition 0.2s ease all
+
+          &::before
+            left 50%
+
+          &::after
+            right 50%
+
+        .highlight
+          position absolute
+          height 25px
+          width 25px
+          border-radius 100%
+          top 12px
+          left 0
+          pointer-events none
+          opacity 0.5
+
+      fieldset
+        border none
+        padding 0 0 0 10px
+        margin 35px 0 0 0
+
+        legend
+          color #a9a9a9
+          font-size 18px
+          font-weight 100
+          margin-bottom 10px
+
+        ul
+          list-style-type none
+          margin 0
+          padding 0
+
+          li
+            padding 10px 0
+
+            label
+              font-weight 300
+              margin-left 10px
+              color #a9a9a9
+
+            input:checked ~ label
+              color #000
+
+      &#release h2,
+      &#publicityClause h2,
+      &#codeOfEthics h2
+        float left
+
+      a
+        // float left
+        // padding 8px 8px 0
+        // margin 0 20px
+        // color $lightBlue
+        text-decoration none
         cursor pointer
+        font-variant initial
+        font-family $sansSerif
+
+        &.open-legal
+          display initial
+
+        &.close-button
+          display none
+
+      &.inset
+        margin-bottom 10px
+
+        .terms
+          font-size .7rem
+          background white
+          padding 10px 20px
+          border 1px solid $lightBlue
+          border-radius 4px
+          color $lightBlue
+          border-color initial
+          color initial
+          text-align justify
+          line-height 1rem
+          font-family $sansSerif
+
+          ol
+            padding-left 20px
+            margin-right 20px
+
+            li
+              padding-left 5px
+
+        .input.checkbox
+          margin-top 10px
+
+        &.open
+          .insetWrapper
+            opacity 1
+
+          a
+            &.open-legal
+              display none
+
+            &.close-button
+              display initial
+
+      .insetWrapper
+        display block
+        height 0
+        width 100%
+        overflow hidden
+        opacity 0
+        padding 5px
+        margin 10px -5px -5px
+        transition height 0.2s ease-in-out, padding 0.1s ease-in-out
+
+      &#releaseForm.inset.open .insetWrapper
+        height 295px
+
+      &#publicityClause.inset.open .insetWrapper
+        height 215px
+
+      &#codeOfEthics.inset.open .insetWrapper
+        height 390px
         display block
 
       .inset
-        width 95%
-        color #78858a
+        box-shadow 0 1px 3px rgba(0,0,0,0.2)
+        float left
+        display inline-block
+        clear both
+        padding 30px
+        background white
 
-        a
-         color #78858a
-         border-bottom 1px solid #78858a
-         padding-bottom 2px
-         -webkit-transition all .1s ease-in-out
-         -moz-transition all .1s ease-in-out
-         -ms-transition all .1s ease-in-out
-         -o-transition all .1s ease-in-out
-         transition all .1s ease-in-out
+        p
+          width 100%
+          margin 0
 
-         &:hover
-           color #11242f
-           border-bottom 1px solid #11242f
+          em
+            width 100%
 
-      ol
-        li
-         margin-bottom 10px
+        ol
+          padding-left 20px
+          margin-bottom 1em
+          text-align justify
+          width 100%
+          margin 15px auto
+          box-sizing border-box
 
-   input[type="submit"]
-     background #4799fc
-     color #fff
-     font-family 'Roboto', sans-serif
-     font-weight 900
-     padding 25px 0
-     margin 50px 0
-     font-size 20px
-     letter-spacing 0.7px
-     border-radius 2.5px
-     border-top 0
-     border-left 0
-     border-right 0
-     border-bottom 1px solid #11242f
+          li
+            font-family 'Libre Baskerville', serif
+            font-size 12px
+            font-style italic
+            margin-bottom 12px
 
-  .wcopc
-   #opc-messages,
-   .woocommerce-info
-     display none !important
+            a
+              font-family 'Libre Baskerville', serif
+              float none
 
-   form.checkout.woocommerce-checkout
-     #opc-product-selection
-      ul#checkout-products
-        margin-bottom 40px
+      .checkbox
+        input
+          width auto
+          float left
+          margin-top 6px !important
+          min-height initial
 
-        &::before
-         content "How Much Can You Contribute?"
-         display block
-         font-family 'roboto', sans-serif
-         font-weight 900
-         font-size 1.17em
-         margin-bottom 1em
+          &:focus ~ label,
+          &:valid ~ label
+            top initial
+            font-size 16px
+            line-height 1.8rem
+            font-weight 100
+            color #a9a9a9
 
-        li
-         display inline-block
-         margin-right 40px
+        label
+          margin-left 10px
+          float left
+          position initial
+          line-height 1.8rem
 
-         span.attributes,
-         span.dash,
-         span.price
-           display none
+      .submit-button
+        font-family $sansSerif
+        background $lightBlue
+        width 600px
+        color white
+        padding 20px
+        border none
+        font-weight 800
+        font-size 2rem
 
-         label
-           display inline
+.noscroll
+  overflow hidden
 
-           input
-            width initial
-            margin auto
+.hiddenDiv
+  display none
+  white-space pre-wrap
+  word-wrap break-word
 
-     .create-account
-      display none !important
+@keyframes inputHighlighter
+  from
+    background $yellow
 
-     abbr.required
-      text-decoration none
-      border-bottom none
-
-     #order_review
-      .opc_order_review
-        display none !important
-
-      #payment
-        .wc_payment_methods
-         .wc_payment_method
-           margin-top 40px
-
-           &:first-of-type
-            margin-top 0
-
-           input.input-radio
-            width initial
-            display inline-block
-
-           label
-            display inline-block
+  to
+    width 0
+    background transparent
 
 // form modules
 .form-success
@@ -249,7 +391,7 @@ body
   background rgba(71, 153, 252, .9)
   box-sizing border-box
   padding 10% 20%
-  font-family 'Roboto', sans-serif
+  font-family $sansSerif, sans-serif
   font-size 3rem
   font-weight 900
 

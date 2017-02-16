@@ -1,12 +1,17 @@
 function navScrollWatcher() {
   $(document).scroll(function() {
-    var target = $(".page-banner").height()-50
-    if($(document).scrollTop() >= target) {
-      $("#header").addClass("scrolled")
-    } else {
-      $("#header").removeClass("scrolled")
-    }
+    dynamicNav()
   })
+}
+
+function dynamicNav() {
+  var target = $(".page-banner").height()-100
+  console.log(target)
+  if($(document).scrollTop() >= target) {
+    $("#header").addClass("scrolled")
+  } else {
+    $("#header").removeClass("scrolled")
+  }
 }
 
 function reponsiveIframe() {
@@ -28,11 +33,41 @@ function closeModule() {
 	})
 }
 
+function formInputWatcher() {
+  $('textarea, input:not(:checkbox)').blur(function() {
+    // check if the input is not empty
+    if ($(this).val())
+      $(this).addClass('used');
+    else
+      $(this).removeClass('used');
+  });
+}
+
+// Textarea auto-resizing
+function textAreaSizeWatcher() {
+  /*  Correctly resize textarea based on input */
+
+  var m = $('.hiddenDiv'), //mirror
+    t = $('textarea'), //target
+    v = null; //value
+
+  t.on('keyup', function() {
+    v = $(this).val();
+    v = v.replace(/\n/g, '<br>');
+    m.html(v + '<br class="lbr">');
+    $(this).css('height', m.innerHeight());
+  })
+}
+
 function openLegal() {
-	$('.open-legal').on('click', function(){
-		$(this).hide()
-		$(this).parent().find('.module').show()
-	})
+	// $('.open-legal').on('click', function(){
+	// 	$(this).hide()
+	// 	$(this).parent().find('.module').show()
+	// })
+
+    $('.form-page form .grouping.inset a').on('click', function(e) {
+      $(this).parent().toggleClass('open')
+    })
 }
 
 function sectionTabs() {
