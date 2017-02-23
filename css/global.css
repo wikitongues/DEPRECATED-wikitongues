@@ -165,31 +165,31 @@ div.cta-section a.cta-secondary:hover {
   font-family: $serif;
   font-style: italic;
 }
-.page-banner i.fa {
-  display: none;
+.page-banner span.banner-counter {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: block;
   position: absolute;
-  z-index: 10;
-  font-size: 5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.3;
-  transition: opacity 0.2s ease-in-out;
-}
-.page-banner i.fa.slide-forward {
-  right: 20px;
-}
-.page-banner i.fa.slide-back {
-  left: 20px;
-}
-.page-banner i.fa.slide-down {
-  top: initial;
-  left: 50%;
-  bottom: 20px;
-  transform: translate(-50%, 0);
-}
-.page-banner i.fa:hover {
-  opacity: 1;
+  bottom: 30px;
+  left: 30px;
+  z-index: 2;
+  border-radius: 2px;
+  opacity: 0.4;
   cursor: pointer;
+  border: 2px solid #fff;
+}
+.page-banner span.banner-counter.active {
+  opacity: 0.8;
+}
+.page-banner span.banner-counter:last-of-type {
+  left: 55px;
+}
+.page-banner span.banner-counter::after {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #00f;
 }
 /* section header */
 .info-header,
@@ -253,6 +253,10 @@ div.cta-section a.cta-secondary:hover {
   left: 50%;
   transform: translateX(-50%);
   background: $lightGrey;
+}
+.content-wrap .pull-quote ::after {
+  top: initial;
+  bottom: 0;
 }
 .content-wrap .pull-quote h1 {
   font-family: $serif !important;
