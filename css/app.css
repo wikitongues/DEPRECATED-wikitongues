@@ -2,6 +2,7 @@ body {
   color: #11242f;
   font-family: 'Libre Baskerville', serif;
   font-size: 11pt;
+  background: #f2f5f6;
 }
 body .inner-wrap {
   position: relative;
@@ -11,7 +12,13 @@ body .inner-wrap {
 body .content-wrap {
   width: 90%;
   max-width: 1440px;
-  margin: 50px auto;
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  padding: 80px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body >.content-wrap a {
   color: #000;
@@ -53,9 +60,6 @@ div.cta-section {
   -o-transition: background 0.2s ease-in-out;
   -ms-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-}
-div.cta-section:hover {
-  background: #f7f7f7;
 }
 div.cta-section h1,
 div.cta-section p {
@@ -118,9 +122,11 @@ div.cta-section a.cta-secondary:hover {
   -webkit-box-shadow: 0px -3px 0 #bd202f inset;
   box-shadow: 0px -3px 0 #bd202f inset;
 }
+.page-banner .carousel-slide:first-of-type {
+  float: left;
+}
 .page-banner .carousel-slide.banner-video {
   overflow: hidden;
-  top: -1px;
   -webkit-box-shadow: 0px -3px 0 #bd202f inset;
   box-shadow: 0px -3px 0 #bd202f inset;
 }
@@ -150,17 +156,26 @@ div.cta-section a.cta-secondary:hover {
   text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 .page-banner .carousel-slide.banner-text h1 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 33%;
-  max-width: 550px;
+  white-space: normal;
+  display: inline-block;
   margin: 0;
   font-size: 6rem;
+  line-height: 0.97;
+  width: 100%;
+}
+.page-banner .carousel-slide.banner-text h1 span {
+  float: left;
+  line-height: 3;
+}
+.page-banner .carousel-slide.banner-text h1 a {
+  clear: both;
+  font-size: 4rem;
+  color: #fff;
+  float: right;
+  font-style: italic;
+  font-weight: 100;
+  display: block;
+  font-family: 'Libre Baskerville', serif;
 }
 .page-banner .carousel-slide.banner-image .title {
   margin: 0;
@@ -437,7 +452,8 @@ header#header.scrolled {
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
-header#header.scrolled .menu-main-navigation-container ul li a {
+header#header.scrolled .menu-main-navigation-container ul li a,
+header#header.scrolled .menu-secondary-navigation-header-menu-container ul li a {
   color: #11242f;
   text-shadow: none;
 }
@@ -456,22 +472,7 @@ header#header #logo img {
   height: 50px;
 }
 header#header .menu-main-navigation-container {
-  position: absolute;
-  top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-header#header .menu-main-navigation-container ul {
-  margin: 0;
-  padding: 0;
-}
-header#header .menu-main-navigation-container ul li {
-  display: inline-block;
-  list-style-type: none;
 }
 header#header .menu-main-navigation-container ul li:last-of-type {
   margin-right: 0;
@@ -484,8 +485,33 @@ header#header .menu-main-navigation-container ul li:last-of-type a:visited {
   letter-spacing: 0.025em;
   text-shadow: none;
 }
+header#header .menu-secondary-navigation-header-menu-container {
+  left: 70px;
+}
+header#header .menu-main-navigation-container,
+header#header .menu-secondary-navigation-header-menu-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header#header .menu-main-navigation-container ul,
+header#header .menu-secondary-navigation-header-menu-container ul {
+  margin: 0;
+  padding: 0;
+}
+header#header .menu-main-navigation-container ul li,
+header#header .menu-secondary-navigation-header-menu-container ul li {
+  display: inline-block;
+  list-style-type: none;
+}
 header#header .menu-main-navigation-container ul li a,
-header#header .menu-main-navigation-container ul li a:visited {
+header#header .menu-secondary-navigation-header-menu-container ul li a,
+header#header .menu-main-navigation-container ul li a:visited,
+header#header .menu-secondary-navigation-header-menu-container ul li a:visited {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   padding: 15px;
@@ -762,7 +788,7 @@ body.page-template-page-team .content-wrap .section-wrap .team-member:nth-of-typ
 body.page-template-page-team .content-wrap .section-wrap .team-member .headshot {
   display: inherit;
   width: 100%;
-  border: 5px solid #fff;
+  border: 5px solid #f2f5f6;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
