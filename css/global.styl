@@ -4,6 +4,7 @@ body
   color $deepBlue
   font-family $serif
   font-size 11pt
+  background $whiteAlternate
 
   .inner-wrap
     position relative
@@ -13,7 +14,11 @@ body
   .content-wrap
     width 90%
     max-width 1440px
-    margin 50px auto
+    margin 0 auto
+    display block
+    height 100%
+    padding 80px 0
+    box-sizing border-box
 
   >.content-wrap
     a
@@ -44,9 +49,6 @@ div.cta-section
   padding 100px 0
   text-align center
   transition background .2s ease-in-out
-
-  &:hover
-   background $offwhite
 
   h1, p
    margin 0 auto
@@ -101,9 +103,11 @@ div.cta-section
    height 100%
    box-shadow 0px -3px 0 #bd202f inset
 
+   &:first-of-type
+     float left
+
    &.banner-video
      overflow hidden
-     top -1px
      box-shadow 0px -3px 0 #bd202f inset
 
      #video
@@ -129,13 +133,26 @@ div.cta-section
 
    &.banner-text
      h1
-      position absolute
-      top 50%
-      transform translateY(-50%)
-      width 33%
-      max-width 550px
+      white-space normal
+      display inline-block
       margin 0
       font-size 6rem
+      line-height .97
+      width 100%
+
+      span
+        float left
+        line-height 3
+
+      a
+        clear both
+        font-size 4rem
+        color white
+        float right
+        font-style italic
+        font-weight 100
+        display block
+        font-family $serif
 
    &.banner-image
      .title

@@ -4,8 +4,10 @@ if( have_rows('carousel_slide') ):
 
 	echo '<div class="page-banner">';
 
-      echo '<span class="slide-back banner-counter active"></span>';
-      echo '<span class="slide-forward banner-counter"></span>';
+      if ( is_front_page() ):
+        echo '<span class="slide-back banner-counter active"></span>';
+        echo '<span class="slide-forward banner-counter"></span>';
+      endif;
 
 	while( have_rows('carousel_slide') ) : the_row();
 
@@ -28,8 +30,6 @@ if( have_rows('carousel_slide') ):
 		endif;
 
 	endwhile;
-
-	echo '<i class="fa fa-chevron-down slide-down" aria-hidden="true"></i>';
 
 	echo '</div>';
 

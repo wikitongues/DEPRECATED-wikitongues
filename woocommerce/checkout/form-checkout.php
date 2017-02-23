@@ -52,7 +52,9 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 
   <?php endif; ?>
 
-  <h3 id="order_review_heading"><?php _e( 'Payment Options', 'woocommerce' ); ?></h3>
+  <div class="payment_options">
+    <h3 id="order_review_heading"><?php _e( 'Payment Options', 'woocommerce' ); ?></h3>
+  </div>
 
   <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

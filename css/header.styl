@@ -12,7 +12,8 @@ header#header
     background #fff
     box-shadow 0 1px 2px rgba(0,0,0,.1)
 
-    .menu-main-navigation-container
+    .menu-main-navigation-container,
+    .menu-secondary-navigation-header-menu-container
       ul
         li
           a
@@ -33,10 +34,28 @@ header#header
       height 50px
 
   .menu-main-navigation-container
+    right 0
+
+    ul li:last-of-type
+      margin-right 0
+      background $yellow
+
+      a, a:visited
+        padding 15px 20px
+        color $white
+        letter-spacing .025em
+        text-shadow none
+
+  .menu-secondary-navigation-header-menu-container
+    left 70px
+
+  .menu-main-navigation-container,
+  .menu-secondary-navigation-header-menu-container
     position absolute
     top 50%
-    right 0
     transform translateY(-50%)
+    // right 0
+    // transform translateY(-50%)
 
     ul
       margin 0
@@ -45,16 +64,6 @@ header#header
       li
         display inline-block
         list-style-type none
-
-        &:last-of-type
-          margin-right 0
-          background $yellow
-
-          a, a:visited
-            padding 15px 20px
-            color $white
-            letter-spacing .025em
-            text-shadow none
 
         a, a:visited
           font-family $sansSerif

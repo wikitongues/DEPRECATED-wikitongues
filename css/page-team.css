@@ -34,7 +34,7 @@ body.page-template-page-team .content-wrap .section-wrap .team-member:nth-of-typ
 body.page-template-page-team .content-wrap .section-wrap .team-member .headshot {
   display: inherit;
   width: 100%;
-  border: 5px solid #fff;
+  border: 5px solid $whiteAlternate;
   box-sizing: border-box;
   padding-bottom: 75%;
 }

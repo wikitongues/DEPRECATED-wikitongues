@@ -34,6 +34,7 @@
             <div class="inner-wrap">
                 <!-- <div class="primary-nav"> -->
                     <div id="logo"><?php the_custom_logo(); ?></div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu' ) ); ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                 <!-- </div> -->
                 <?php //wp_nav_menu( array( 'theme_location' => 'secondary-menu' ) ); ?>
