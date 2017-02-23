@@ -96,11 +96,15 @@ function carousel() {
 		$hasClickedOnCarousel
 
 		function animateForward(){
+                  $(".banner-counter").removeClass("active")
+                  $(".banner-counter.slide-forward").addClass("active")
 			$firstSlide.animate({'margin-left': '-'+$carouselWidth+'px'}, 500 )
 			$slide = $slide+1
 		}
 
 		function animateBack(){
+                  $(".banner-counter").removeClass("active")
+                  $(".banner-counter.slide-back").addClass("active")
 			$firstSlide.animate({'margin-left': '0px'}, 500 )
 			$slide = $slide-1
 		}
@@ -115,11 +119,13 @@ function carousel() {
 		}
 
 		$('.slide-back').click(function(){
-			animateBack()
+                  $(this).addClass("active")
+                  animateBack()
 		})
 
 		$('.slide-forward').click(function(){
-			animateForward()
+                  $(this).addClass("active")
+                  animateForward()
 			clearTimeout($hasClickedOnCarousel)
 		})
 

@@ -1,5 +1,7 @@
 <?php
 
+// show_admin_bar(false);
+
 // register navigation menu support
 function register_my_menus() {
   register_nav_menus(

@@ -4,6 +4,9 @@ if( have_rows('carousel_slide') ):
 
 	echo '<div class="page-banner">';
 
+      echo '<span class="slide-back banner-counter active"></span>';
+      echo '<span class="slide-forward banner-counter"></span>';
+
 	while( have_rows('carousel_slide') ) : the_row();
 
 		if( get_row_layout() == 'text' ):
@@ -22,12 +25,12 @@ if( have_rows('carousel_slide') ):
 
 			echo 'An error occurs';
 
-		endif; 
+		endif;
 
 	endwhile;
 
 	echo '<i class="fa fa-chevron-down slide-down" aria-hidden="true"></i>';
-	
+
 	echo '</div>';
 
 endif;
