@@ -826,6 +826,11 @@ body.page-template-page-donate #panel-245-1-0-0 {
 body.page-template-page-donate footer#footer {
   margin-top: 100px;
 }
+body.page-id-195,
+body.page-id-193,
+body.page-id-69 {
+  background: #f2f5f6;
+}
 body.page-template-page-form .section-tabs,
 body.page-id-193 .section-tabs {
   width: 100%;
@@ -886,6 +891,7 @@ body.page-id-193 footer#footer {
   overflow: hidden;
   background: #fff;
   font-family: 'Roboto', sans-serif;
+  margin: auto;
 }
 .form-page form h2 {
   width: 600px;
@@ -1093,22 +1099,11 @@ body.page-id-193 footer#footer {
 .form-page form .grouping fieldset ul li input:checked ~ label {
   color: #000;
 }
-.form-page form .grouping#release h2,
-.form-page form .grouping#publicityClause h2,
-.form-page form .grouping#codeOfEthics h2 {
-  float: left;
-}
 .form-page form .grouping a {
   text-decoration: none;
   cursor: pointer;
   font-variant: initial;
   font-family: 'Roboto', sans-serif;
-}
-.form-page form .grouping a.open-legal {
-  display: initial;
-}
-.form-page form .grouping a.close-button {
-  display: none;
 }
 .form-page form .grouping.inset {
   margin-bottom: 10px;
@@ -1137,25 +1132,11 @@ body.page-id-193 footer#footer {
 .form-page form .grouping.inset .input.checkbox {
   margin-top: 10px;
 }
-.form-page form .grouping.inset.open .insetWrapper {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-}
-.form-page form .grouping.inset.open a.open-legal {
-  display: none;
-}
-.form-page form .grouping.inset.open a.close-button {
-  display: initial;
-}
 .form-page form .grouping .insetWrapper {
   display: block;
   height: 0;
   width: 100%;
   overflow: hidden;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   padding: 5px;
   margin: 10px -5px -5px;
   -webkit-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
@@ -1163,16 +1144,6 @@ body.page-id-193 footer#footer {
   -o-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
   -ms-transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
   transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
-}
-.form-page form .grouping#releaseForm.inset.open .insetWrapper {
-  height: 295px;
-}
-.form-page form .grouping#publicityClause.inset.open .insetWrapper {
-  height: 215px;
-}
-.form-page form .grouping#codeOfEthics.inset.open .insetWrapper {
-  height: 390px;
-  display: block;
 }
 .form-page form .grouping .inset {
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -1239,6 +1210,14 @@ body.page-id-193 footer#footer {
   border: none;
   font-weight: 800;
   font-size: 2rem;
+}
+.form-page .alternate-form {
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+  margin: 40px auto;
 }
 .noscroll {
   overflow: hidden;

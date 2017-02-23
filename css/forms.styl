@@ -1,5 +1,10 @@
 // form header
 body
+  &.page-id-195,
+  &.page-id-193,
+  &.page-id-69
+    background #F2F5F6
+
   &.page-template-page-form,
   &.page-id-193
    .section-tabs
@@ -51,6 +56,7 @@ body
     overflow hidden
     background white
     font-family $sansSerif
+    margin auto
 
     h2
         width 600px
@@ -221,26 +227,13 @@ body
             input:checked ~ label
               color #000
 
-      &#release h2,
-      &#publicityClause h2,
-      &#codeOfEthics h2
-        float left
-
       a
-        // float left
-        // padding 8px 8px 0
-        // margin 0 20px
-        // color $lightBlue
         text-decoration none
         cursor pointer
         font-variant initial
         font-family $sansSerif
 
-        &.open-legal
-          display initial
 
-        &.close-button
-          display none
 
       &.inset
         margin-bottom 10px
@@ -268,36 +261,14 @@ body
         .input.checkbox
           margin-top 10px
 
-        &.open
-          .insetWrapper
-            opacity 1
-
-          a
-            &.open-legal
-              display none
-
-            &.close-button
-              display initial
-
       .insetWrapper
         display block
         height 0
         width 100%
         overflow hidden
-        opacity 0
         padding 5px
         margin 10px -5px -5px
         transition height 0.2s ease-in-out, padding 0.1s ease-in-out
-
-      &#releaseForm.inset.open .insetWrapper
-        height 295px
-
-      &#publicityClause.inset.open .insetWrapper
-        height 215px
-
-      &#codeOfEthics.inset.open .insetWrapper
-        height 390px
-        display block
 
       .inset
         box-shadow 0 1px 3px rgba(0,0,0,0.2)
@@ -362,6 +333,14 @@ body
         border none
         font-weight 800
         font-size 2rem
+
+  .alternate-form
+    width 600px
+    font-family $sansSerif
+    font-style italic
+    color #aaa
+    text-align center
+    margin 40px auto
 
 .noscroll
   overflow hidden
