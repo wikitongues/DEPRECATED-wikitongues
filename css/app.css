@@ -1381,6 +1381,9 @@ body.page-id-193 footer#footer {
   body.page-template-page-form .section-tabs {
     margin-bottom: 40px !important;
   }
+  body .form-page {
+    margin-bottom: 20px;
+  }
   body .form-page form {
     width: 100%;
   }
