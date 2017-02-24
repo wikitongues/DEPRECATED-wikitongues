@@ -82,10 +82,24 @@ body.admin-bar header#header {
   body.admin-bar header#header {
     top: 46px;
   }
+  body header#header {
+    height: initial;
+  }
+  body header#header .inner-wrap {
+    float: left;
+  }
+  body header#header .inner-wrap #logo {
+    float: inherit;
+  }
+  body header#header .inner-wrap #logo a img {
+    height: 45px;
+  }
   body header#header .menu-main-navigation-container {
-    left: 20%;
     overflow-x: scroll;
-    white-space: nowrap;
+    position: initial;
+    float: right;
+    transform: initial;
+    display: none;
   }
   body header#header .menu-main-navigation-container::-webkit-scrollbar {
     display: none;

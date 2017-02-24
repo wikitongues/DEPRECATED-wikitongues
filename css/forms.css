@@ -176,7 +176,7 @@ body.page-id-193 footer#footer {
 }
 .form-page form .grouping .input label {
   color: #a9a9a9;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 100;
   position: absolute;
   pointer-events: none;
@@ -394,13 +394,46 @@ body.page-id-193 footer#footer {
   body.page-template-page-form .section-tabs {
     margin-bottom: 40px !important;
   }
-  .form-page form .grouping.legal .open-legal {
+  body .form-page form {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1 {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) label {
+    left: 10px;
+  }
+  body .form-page form .grouping .input.checkbox:nth-of-type(2n) {
+    margin-top: 0;
+  }
+  body .form-page form .grouping.legal .checkbox input {
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    padding: 15px;
+  }
+  body .form-page form .grouping.legal .open-legal {
     width: 100%;
     box-sizing: border-box;
     padding: 0 25px 25px 25px !important;
   }
-  .form-page form .insetWrapper {
+  body .form-page form .grouping:last-of-type {
+    width: 122%;
+  }
+  body .form-page form .grouping .submit-button {
+    width: 100%;
+  }
+  body .form-page .insetWrapper {
     padding: 40px 30px 30px 30px !important;
+  }
+  body .form-page .alternate-form {
+    width: 100%;
   }
 }
 @-moz-keyframes inputHighlighter {

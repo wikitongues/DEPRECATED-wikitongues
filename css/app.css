@@ -126,6 +126,11 @@ div.cta-section a.cta-secondary:hover {
   float: left;
 }
 .page-banner .carousel-slide.banner-video {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
   -webkit-box-shadow: 0px -3px 0 #bd202f inset;
   box-shadow: 0px -3px 0 #bd202f inset;
@@ -176,6 +181,13 @@ div.cta-section a.cta-secondary:hover {
   font-weight: 100;
   display: block;
   font-family: 'Libre Baskerville', serif;
+}
+.page-banner .carousel-slide.banner-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .page-banner .carousel-slide.banner-image .title {
   margin: 0;
@@ -366,28 +378,54 @@ div.cta-section a.cta-secondary:hover {
   }
 }
 @media all and (max-width: 640px) {
+  html {
+    overflow-x: hidden;
+  }
   body {
+    overflow: hidden;
     font-size: 9pt;
+  }
+  body.page-id-16 .page-banner .carousel-slide.banner-video {
+    background-position: 35% center;
+  }
+  body.page-id-22 .page-banner .carousel-slide.banner-image {
+    background-position: 70% center;
+  }
+  body.page-id-24 .page-banner .carousel-slide.banner-image {
+    background-position: 20% center;
+  }
+  body.page-id-57 .page-banner .carousel-slide.banner-image {
+    background-position: 85% center;
+  }
+  body.page-id-193 .page-banner .carousel-slide.banner-image {
+    background-position: 13% center;
+  }
+  body.page-id-195 .page-banner .carousel-slide.banner-image {
+    background-position: 5% center;
   }
   .content-wrap {
     margin-top: 20px;
+    padding-bottom: 0 !important;
   }
   .page-banner {
-    height: 35vh !important;
+    height: 100vh !important;
   }
   .page-banner h1 {
     width: initial !important;
-    font-size: 1.5rem !important;
-    white-space: pre;
+    font-size: 2.8rem !important;
   }
-  .page-banner h1 br {
-    display: none;
+  .page-banner h1 span {
+    margin-top: 4em;
+    font-size: 3rem;
   }
   .page-banner i {
     font-size: 2rem !important;
   }
-  .page-banner .carousel-slide.banner-text h1 {
-    width: 80%;
+  .page-banner .carousel-slide.banner-text {
+    padding: 80px 0;
+  }
+  .page-banner .carousel-slide.banner-text h1 span {
+    line-height: 0.97;
   }
   .page-banner .carousel-slide.banner-video {
     -webkit-background-size: cover !important;
@@ -397,8 +435,9 @@ div.cta-section a.cta-secondary:hover {
   .page-banner .carousel-slide.banner-video #video {
     display: none;
   }
-  .page-banner .carousel-slide.banner-video h1 {
-    width: 40%;
+  .page-banner .carousel-slide.banner-video .video-caption {
+    bottom: 70px;
+    right: 30px;
   }
   .page-banner .carousel-slide.banner-image .caption {
     font-size: 0.8rem;
@@ -412,17 +451,24 @@ div.cta-section a.cta-secondary:hover {
     width: 90%;
     margin: 20px auto 40px;
   }
-  .content-wrap .panel-grid-cell {
+  .page-header .page-header-content h1 {
+    font-size: 1.2rem !important;
+    text-align: left;
+  }
+  .content-wrap {
+    padding-top: 0 !important;
+  }
+  .panel-grid-cell {
     margin-bottom: 20px !important;
   }
-  .content-wrap .panel-grid {
+  .panel-grid {
     margin-bottom: 20px !important;
   }
-  .content-wrap .pull-quote {
+  .pull-quote {
     width: 100% !important;
     padding: 20px 0 !important;
   }
-  .content-wrap .info-header {
+  .info-header {
     margin-top: 50px !important;
     width: 100%;
   }
@@ -531,10 +577,28 @@ body.admin-bar header#header {
   body.admin-bar header#header {
     top: 46px;
   }
+  body header#header {
+    height: initial;
+  }
+  body header#header .inner-wrap {
+    float: left;
+  }
+  body header#header .inner-wrap #logo {
+    float: inherit;
+  }
+  body header#header .inner-wrap #logo a img {
+    height: 45px;
+  }
   body header#header .menu-main-navigation-container {
-    left: 20%;
     overflow-x: scroll;
-    white-space: nowrap;
+    position: initial;
+    float: right;
+    -webkit-transform: initial;
+    -moz-transform: initial;
+    -o-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    display: none;
   }
   body header#header .menu-main-navigation-container::-webkit-scrollbar {
     display: none;
@@ -587,6 +651,32 @@ footer#footer .content-wrap .notice span:last-of-type {
   font-size: 0.8em;
   margin: 20px auto 0;
   max-width: 480px;
+}
+@media all and (max-width: 640px) {
+  footer#footer {
+    margin-top: 0 !important;
+    padding: 40px 0;
+  }
+  footer#footer .content-wrap {
+    padding-bottom: 0;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation {
+    display: inline-block;
+    margin: 10px 0 20px;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation li {
+    width: 33.333333333333336%;
+    margin: 0;
+    float: left;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 6px;
+    float: left;
+  }
 }
 body.home .page-banner {
   height: 95vh;
@@ -801,6 +891,10 @@ body.page-template-page-team .content-wrap .section-wrap .team-member .personal-
   text-align: left;
   font-size: 0.8em;
   margin: 5px 0 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 body.page-template-page-team .content-wrap .section-wrap .team-member .personal-info span:nth-of-type(2) {
   font-size: 0.6rem;
@@ -820,8 +914,7 @@ body.page-template-page-team .content-wrap .section-wrap .team-member .personal-
 @media all and (max-width: 640px) {
   body.page-template-page-team .content-wrap .section-wrap .team-member,
   body.page-template-page-team .content-wrap #board .team-member {
-    width: 48% !important;
-    margin-right: 1% !important;
+    width: 50% !important;
     margin-bottom: 10px !important;
   }
   body.page-template-page-team .content-wrap .section-wrap .team-member:nth-of-type(2n),
@@ -1048,7 +1141,7 @@ body.page-id-193 footer#footer {
 }
 .form-page form .grouping .input label {
   color: #a9a9a9;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 100;
   position: absolute;
   pointer-events: none;
@@ -1288,15 +1381,48 @@ body.page-id-193 footer#footer {
   body.page-template-page-form .section-tabs {
     margin-bottom: 40px !important;
   }
-  .form-page form .grouping.legal .open-legal {
+  body .form-page form {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1 {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) label {
+    left: 10px;
+  }
+  body .form-page form .grouping .input.checkbox:nth-of-type(2n) {
+    margin-top: 0;
+  }
+  body .form-page form .grouping.legal .checkbox input {
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    padding: 15px;
+  }
+  body .form-page form .grouping.legal .open-legal {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 25px 25px 25px !important;
   }
-  .form-page form .insetWrapper {
+  body .form-page form .grouping:last-of-type {
+    width: 122%;
+  }
+  body .form-page form .grouping .submit-button {
+    width: 100%;
+  }
+  body .form-page .insetWrapper {
     padding: 40px 30px 30px 30px !important;
+  }
+  body .form-page .alternate-form {
+    width: 100%;
   }
 }
 @-moz-keyframes inputHighlighter {
@@ -1571,6 +1697,11 @@ body.page-id-193 footer#footer {
   font-weight: 800;
   font-size: 2rem;
   margin-left: -30px;
+}
+@media all and (max-width: 640px) {
+  .wcopc form.checkout.woocommerce-checkout #payment .place-order input.submit-button {
+    width: 122%;
+  }
 }
 body.woocommerce-checkout .woocommerce,
 body.woocommerce-order-received .woocommerce {

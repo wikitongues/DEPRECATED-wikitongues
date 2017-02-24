@@ -161,7 +161,7 @@ body
 
         label
           color #a9a9a9
-          font-size 16px
+          font-size 15px
           font-weight 100
           position absolute
           pointer-events none
@@ -389,18 +389,53 @@ body
 
 @media all and (max-width:640px)
   body
-   &.page-template-page-form
-     .section-tabs
-      margin-bottom 40px !important
+    &.page-template-page-form
+      .section-tabs
+        margin-bottom 40px !important
 
-  .form-page
-   form
-     .grouping
-      &.legal
-        .open-legal
-         width 100%
-         box-sizing border-box
-         padding 0 25px 25px 25px !important
+    .form-page
+      form
+        width 100%
+        .grouping
+          .input
+            &.col-1
+              width 100%
 
-     .insetWrapper
-      padding 40px 30px 30px 30px !important
+              &:nth-of-type(n)
+                padding 10px 0
+
+              &:nth-of-type(2n)
+                padding 10px 0
+
+                label
+                  left 10px
+
+            &.checkbox
+              &:nth-of-type(2n)
+                margin-top 0
+
+          &.legal
+            .checkbox
+              input
+                position absolute
+                left -10px
+                top 24px
+                padding 15px
+
+          &.legal
+            .open-legal
+              width 100%
+              box-sizing border-box
+              padding 0 25px 25px 25px !important
+
+          &:last-of-type
+            width 122%
+
+          .submit-button
+            width 100%
+
+       .insetWrapper
+        padding 40px 30px 30px 30px !important
+
+      .alternate-form
+        width 100%

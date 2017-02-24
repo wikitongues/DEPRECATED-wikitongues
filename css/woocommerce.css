@@ -215,3 +215,8 @@
   font-size: 2rem;
   margin-left: -30px;
 }
+@media all and (max-width: 640px) {
+  .wcopc form.checkout.woocommerce-checkout #payment .place-order input.submit-button {
+    width: 122%;
+  }
+}

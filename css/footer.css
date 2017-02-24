@@ -38,3 +38,27 @@ footer#footer .content-wrap .notice span:last-of-type {
   margin: 20px auto 0;
   max-width: 480px;
 }
+@media all and (max-width: 640px) {
+  footer#footer {
+    margin-top: 0 !important;
+    padding: 40px 0;
+  }
+  footer#footer .content-wrap {
+    padding-bottom: 0;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation {
+    display: inline-block;
+    margin: 10px 0 20px;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation li {
+    width: 33.333333333333336%;
+    margin: 0;
+    float: left;
+  }
+  footer#footer .content-wrap .menu-footer-navigation-container ul#menu-footer-navigation li a {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 6px;
+    float: left;
+  }
+}
