@@ -1,0 +1,44 @@
+.panel-grid
+  .textwidget
+    table
+
+      box-shadow 0 1px 3px rgba(0,0,0,0.2)
+      font-weight 300
+      margin-top 30px
+      background white
+      font-family $sansSerif
+
+      tr
+        border-bottom 1px solid #eaeaea
+
+      th
+        font-weight 300
+        color #aaa
+
+        &:first-of-type
+          width 17%
+          text-align left
+
+        &:nth-of-type(2)
+          width 27%
+
+        &:nth-of-type(3)
+          width 39%
+
+        &:nth-of-type(4)
+          width 17%
+
+        &:not(:first-of-type)
+          text-align right
+
+      th,
+      td
+        padding 20px
+        vertical-align top
+
+      td
+        &:first-of-type
+          font-weight 500
+
+        &:not(:first-of-type)
+          text-align right
