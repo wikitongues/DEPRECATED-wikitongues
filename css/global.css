@@ -109,6 +109,9 @@ div.cta-section a.cta-secondary:hover {
   float: left;
 }
 .page-banner .carousel-slide.banner-video {
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
   box-shadow: 0px -3px 0 #bd202f inset;
 }
@@ -154,6 +157,11 @@ div.cta-section a.cta-secondary:hover {
   font-weight: 100;
   display: block;
   font-family: $serif;
+}
+.page-banner .carousel-slide.banner-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page-banner .carousel-slide.banner-image .title {
   margin: 0;
@@ -326,28 +334,54 @@ div.cta-section a.cta-secondary:hover {
   }
 }
 @media all and (max-width: 640px) {
+  html {
+    overflow-x: hidden;
+  }
   body {
+    overflow: hidden;
     font-size: 9pt;
+  }
+  body.page-id-16 .page-banner .carousel-slide.banner-video {
+    background-position: 35% center;
+  }
+  body.page-id-22 .page-banner .carousel-slide.banner-image {
+    background-position: 70% center;
+  }
+  body.page-id-24 .page-banner .carousel-slide.banner-image {
+    background-position: 20% center;
+  }
+  body.page-id-57 .page-banner .carousel-slide.banner-image {
+    background-position: 85% center;
+  }
+  body.page-id-193 .page-banner .carousel-slide.banner-image {
+    background-position: 13% center;
+  }
+  body.page-id-195 .page-banner .carousel-slide.banner-image {
+    background-position: 5% center;
   }
   .content-wrap {
     margin-top: 20px;
+    padding-bottom: 0 !important;
   }
   .page-banner {
     height: 100vh !important;
   }
   .page-banner h1 {
     width: initial !important;
-    font-size: 1.5rem !important;
-    white-space: pre;
+    font-size: 2.8rem !important;
   }
-  .page-banner h1 br {
-    display: none;
+  .page-banner h1 span {
+    margin-top: 4em;
+    font-size: 3rem;
   }
   .page-banner i {
     font-size: 2rem !important;
   }
-  .page-banner .carousel-slide.banner-text h1 {
-    width: 80%;
+  .page-banner .carousel-slide.banner-text {
+    padding: 80px 0;
+  }
+  .page-banner .carousel-slide.banner-text h1 span {
+    line-height: 0.97;
   }
   .page-banner .carousel-slide.banner-video {
     background-size: cover !important;
@@ -355,8 +389,9 @@ div.cta-section a.cta-secondary:hover {
   .page-banner .carousel-slide.banner-video #video {
     display: none;
   }
-  .page-banner .carousel-slide.banner-video h1 {
-    width: 40%;
+  .page-banner .carousel-slide.banner-video .video-caption {
+    bottom: 70px;
+    right: 30px;
   }
   .page-banner .carousel-slide.banner-image .caption {
     font-size: 0.8rem;
@@ -370,17 +405,24 @@ div.cta-section a.cta-secondary:hover {
     width: 90%;
     margin: 20px auto 40px;
   }
-  .content-wrap .panel-grid-cell {
+  .page-header .page-header-content h1 {
+    font-size: 1.2rem !important;
+    text-align: left;
+  }
+  .content-wrap {
+    padding-top: 0 !important;
+  }
+  .panel-grid-cell {
     margin-bottom: 20px !important;
   }
-  .content-wrap .panel-grid {
+  .panel-grid {
     margin-bottom: 20px !important;
   }
-  .content-wrap .pull-quote {
+  .pull-quote {
     width: 100% !important;
     padding: 20px 0 !important;
   }
-  .content-wrap .info-header {
+  .info-header {
     margin-top: 50px !important;
     width: 100%;
   }

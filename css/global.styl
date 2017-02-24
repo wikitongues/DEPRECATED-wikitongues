@@ -107,6 +107,9 @@ div.cta-section
      float left
 
    &.banner-video
+     background-size cover !important
+     background-position center center
+     background-repeat no-repeat
      overflow hidden
      box-shadow 0px -3px 0 #bd202f inset
 
@@ -155,6 +158,10 @@ div.cta-section
         font-family $serif
 
    &.banner-image
+     background-position center center
+     background-repeat no-repeat;
+     background-size cover
+
      .title
       margin 0
       position absolute
@@ -357,12 +364,47 @@ div.cta-section
 
 @media all and (max-width:640px)
   /* general styles */
+  html
+    overflow-x hidden
 
   body
-   font-size 9pt
+    overflow hidden
+    font-size 9pt
+
+    // Banner position
+    &.page-id-16
+      .page-banner
+        .carousel-slide.banner-video
+          background-position 35% center
+
+    &.page-id-22
+      .page-banner
+        .carousel-slide.banner-image
+          background-position 70% center
+
+    &.page-id-24
+      .page-banner
+        .carousel-slide.banner-image
+          background-position 20% center
+
+    &.page-id-57
+      .page-banner
+        .carousel-slide.banner-image
+          background-position 85% center
+
+    &.page-id-193
+      .page-banner
+        .carousel-slide.banner-image
+          background-position 13% center
+
+    &.page-id-195
+      .page-banner
+        .carousel-slide.banner-image
+          background-position 5% center
 
   .content-wrap
    margin-top 20px
+   padding-bottom 0 !important
 
   /* page banners */
 
@@ -371,19 +413,22 @@ div.cta-section
 
    h1
      width initial !important
-     font-size 1.5rem !important
-     white-space pre
+     font-size 2.8rem !important
 
-     br
-      display none
+     span
+       margin-top 4em
+       font-size 3rem
 
    i
      font-size 2rem !important
 
    .carousel-slide
      &.banner-text
-      h1
-        width 80%
+        padding 80px 0
+
+        h1
+          span
+            line-height .97
 
      &.banner-video
       background-size cover !important
@@ -391,8 +436,9 @@ div.cta-section
       #video
         display none
 
-      h1
-        width 40%
+      .video-caption
+        bottom 70px
+        right 30px
 
      &.banner-image
       .caption
@@ -408,9 +454,17 @@ div.cta-section
    width 90%
    margin 20px auto 40px
 
+  .page-header
+    .page-header-content
+      h1
+        font-size 1.2rem !important
+        text-align left
+
   /* page builder classes */
 
   .content-wrap
+    padding-top 0 !important
+
    .panel-grid-cell
      margin-bottom 20px !important
 

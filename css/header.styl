@@ -86,10 +86,21 @@ body
         top 46px
 
     header#header
+      height initial
+      .inner-wrap
+        float left
+        #logo
+          float inherit
+          a
+            img
+              height 45px
+
       .menu-main-navigation-container
-        left 20%
         overflow-x scroll
-        white-space nowrap
+        position initial
+        float right
+        transform initial
+        display none
 
         &::-webkit-scrollbar
           display none

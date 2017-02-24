@@ -1,0 +1,7 @@
+body.woocommerce-checkout .woocommerce,
+body.woocommerce-order-received .woocommerce {
+  width: 90%;
+  max-width: 650px;
+  margin: 100px auto;
+  text-align: center;
+}

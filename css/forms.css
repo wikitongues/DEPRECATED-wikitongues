@@ -1,0 +1,474 @@
+body.page-id-195,
+body.page-id-193,
+body.page-id-69 {
+  background: #f2f5f6;
+}
+body.page-template-page-form .section-tabs,
+body.page-id-193 .section-tabs {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+body.page-template-page-form .section-tabs li,
+body.page-id-193 .section-tabs li {
+  display: inline-block;
+  margin: 0 10px;
+}
+body.page-template-page-form .section-tabs li button,
+body.page-id-193 .section-tabs li button {
+  font-family: $sansSerif, sans-serif;
+  background: none;
+  border: 0;
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+body.page-template-page-form .section-tabs li button.active,
+body.page-id-193 .section-tabs li button.active {
+  border-bottom: 3px solid $yellow;
+}
+body.page-template-page-form .section-tabs li button:focus,
+body.page-id-193 .section-tabs li button:focus {
+  outline: none;
+}
+body.page-template-page-form .main-content,
+body.page-id-193 .main-content {
+  max-width: 1024px;
+  margin: auto;
+}
+body.page-template-page-form section,
+body.page-id-193 section {
+  display: none;
+}
+body.page-template-page-form section.active,
+body.page-id-193 section.active {
+  display: block;
+}
+body.page-template-page-form footer#footer,
+body.page-id-193 footer#footer {
+  margin-top: 100px;
+}
+.form-page form {
+  width: 600px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  font-family: $sansSerif;
+  margin: auto;
+}
+.form-page form h2 {
+  width: 600px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  margin: 0 0 0 -30px;
+  background: $lightBlue;
+  color: #fff;
+  display: inline-block;
+  float: left;
+}
+.form-page form .grouping {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto 50px;
+  display: inline-block;
+  float: left;
+}
+.form-page form .grouping:last-of-type {
+  width: 600px;
+  margin-left: -30px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.form-page form .grouping .input {
+  position: relative;
+  margin-top: 35px;
+  float: left;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: $sansSerif;
+}
+.form-page form .grouping .input.hidden {
+  height: 0px;
+  margin-top: 0px;
+}
+.form-page form .grouping .input.checkbox {
+  margin-top: 0;
+  padding: 10px 11px;
+}
+.form-page form .grouping .input.checkbox:nth-of-type(1),
+.form-page form .grouping .input.checkbox:nth-of-type(2) {
+  margin-top: 35px;
+}
+.form-page form .grouping .input.col-1 {
+  width: 50%;
+}
+.form-page form .grouping .input.col-1:nth-of-type(n) {
+  padding-right: 11px;
+}
+.form-page form .grouping .input.col-1:nth-of-type(2n) {
+  padding-left: 11px;
+}
+.form-page form .grouping .input.col-1:nth-of-type(2n) label {
+  left: 20px;
+}
+.form-page form .grouping .input.col-2 {
+  width: 100%;
+}
+.form-page form .grouping .input textarea {
+  resize: vertical;
+}
+.form-page form .grouping .input input,
+.form-page form .grouping .input textarea {
+  display: block;
+}
+.form-page form .grouping .input input,
+.form-page form .grouping .input textarea,
+.form-page form .grouping .input .hiddenDiv {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 11px;
+  min-height: 32px;
+  font-family: $sansSerif, sans-serif;
+  color: #000;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e6;
+  box-sizing: border-box;
+}
+.form-page form .grouping .input input:focus,
+.form-page form .grouping .input textarea:focus,
+.form-page form .grouping .input .hiddenDiv:focus {
+  outline: none;
+}
+.form-page form .grouping .input input:focus ~ .bar::before,
+.form-page form .grouping .input textarea:focus ~ .bar::before,
+.form-page form .grouping .input .hiddenDiv:focus ~ .bar::before,
+.form-page form .grouping .input input:focus ~ .bar::after,
+.form-page form .grouping .input textarea:focus ~ .bar::after,
+.form-page form .grouping .input .hiddenDiv:focus ~ .bar::after {
+  width: 50%;
+}
+.form-page form .grouping .input input:focus ~ .highlight,
+.form-page form .grouping .input textarea:focus ~ .highlight,
+.form-page form .grouping .input .hiddenDiv:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+.form-page form .grouping .input input:focus ~ label,
+.form-page form .grouping .input textarea:focus ~ label,
+.form-page form .grouping .input .hiddenDiv:focus ~ label {
+  top: -11px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #000;
+}
+.form-page form .grouping .input input.used ~ label,
+.form-page form .grouping .input textarea.used ~ label,
+.form-page form .grouping .input .hiddenDiv.used ~ label {
+  top: -11px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.form-page form .grouping .input label {
+  color: #a9a9a9;
+  font-size: 15px;
+  font-weight: 100;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+.form-page form .grouping .input .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.form-page form .grouping .input .bar::before,
+.form-page form .grouping .input .bar::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: $yellow;
+  transition: 0.2s ease all;
+}
+.form-page form .grouping .input .bar::before {
+  left: 50%;
+}
+.form-page form .grouping .input .bar::after {
+  right: 50%;
+}
+.form-page form .grouping .input .highlight {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  top: 12px;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.form-page form .grouping fieldset {
+  border: none;
+  padding: 0 0 0 10px;
+  margin: 35px 0 0 0;
+}
+.form-page form .grouping fieldset legend {
+  color: #a9a9a9;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.form-page form .grouping fieldset ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.form-page form .grouping fieldset ul li {
+  padding: 10px 0;
+}
+.form-page form .grouping fieldset ul li label {
+  font-weight: 300;
+  margin-left: 10px;
+  color: #a9a9a9;
+}
+.form-page form .grouping fieldset ul li input:checked ~ label {
+  color: #000;
+}
+.form-page form .grouping a {
+  text-decoration: none;
+  cursor: pointer;
+  font-variant: initial;
+  font-family: $sansSerif;
+}
+.form-page form .grouping.inset {
+  margin-bottom: 10px;
+}
+.form-page form .grouping.inset .terms {
+  font-size: 0.7rem;
+  background: #fff;
+  padding: 10px 20px;
+  border: 1px solid $lightBlue;
+  border-radius: 4px;
+  color: $lightBlue;
+  border-color: initial;
+  color: initial;
+  text-align: justify;
+  line-height: 1rem;
+  font-family: $sansSerif;
+}
+.form-page form .grouping.inset .terms ol {
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.form-page form .grouping.inset .terms ol li {
+  padding-left: 5px;
+}
+.form-page form .grouping.inset .input.checkbox {
+  margin-top: 10px;
+}
+.form-page form .grouping .insetWrapper {
+  display: block;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+  margin: 10px -5px -5px;
+  transition: height 0.2s ease-in-out, padding 0.1s ease-in-out;
+}
+.form-page form .grouping .inset {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  float: left;
+  display: inline-block;
+  clear: both;
+  padding: 30px;
+  background: #fff;
+}
+.form-page form .grouping .inset p {
+  width: 100%;
+  margin: 0;
+}
+.form-page form .grouping .inset p em {
+  width: 100%;
+}
+.form-page form .grouping .inset ol {
+  padding-left: 20px;
+  margin-bottom: 1em;
+  text-align: justify;
+  width: 100%;
+  margin: 15px auto;
+  box-sizing: border-box;
+}
+.form-page form .grouping .inset ol li {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.form-page form .grouping .inset ol li a {
+  font-family: 'Libre Baskerville', serif;
+  float: none;
+}
+.form-page form .grouping .checkbox input {
+  width: auto;
+  float: left;
+  margin-top: 6px !important;
+  min-height: initial;
+}
+.form-page form .grouping .checkbox input:focus ~ label,
+.form-page form .grouping .checkbox input:valid ~ label {
+  top: initial;
+  font-size: 16px;
+  line-height: 1.8rem;
+  font-weight: 100;
+  color: #a9a9a9;
+}
+.form-page form .grouping .checkbox label {
+  margin-left: 10px;
+  float: left;
+  position: initial;
+  line-height: 1.8rem;
+}
+.form-page form .grouping .submit-button {
+  font-family: $sansSerif;
+  background: $lightBlue;
+  width: 600px;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.form-page .alternate-form {
+  width: 600px;
+  font-family: $sansSerif;
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+  margin: 40px auto;
+}
+.noscroll {
+  overflow: hidden;
+}
+.hiddenDiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.form-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  color: $white;
+  background: rgba(71,153,252,0.9);
+  box-sizing: border-box;
+  padding: 10% 20%;
+  font-family: $sansSerif, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.form-success a {
+  color: $white;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $white;
+}
+.form-success a.close-button {
+  background: $white;
+  color: $lightBlue;
+  padding: 10px 30px;
+  border-radius: 2px;
+  border-bottom: 0;
+  cursor: pointer;
+}
+@media all and (max-width: 640px) {
+  body.page-template-page-form .section-tabs {
+    margin-bottom: 40px !important;
+  }
+  body .form-page form {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1 {
+    width: 100%;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) {
+    padding: 10px 0;
+  }
+  body .form-page form .grouping .input.col-1:nth-of-type(2n) label {
+    left: 10px;
+  }
+  body .form-page form .grouping .input.checkbox:nth-of-type(2n) {
+    margin-top: 0;
+  }
+  body .form-page form .grouping.legal .checkbox input {
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    padding: 15px;
+  }
+  body .form-page form .grouping.legal .open-legal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px 25px 25px !important;
+  }
+  body .form-page form .grouping:last-of-type {
+    width: 122%;
+  }
+  body .form-page form .grouping .submit-button {
+    width: 100%;
+  }
+  body .form-page .insetWrapper {
+    padding: 40px 30px 30px 30px !important;
+  }
+  body .form-page .alternate-form {
+    width: 100%;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: $yellow;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: $yellow;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-o-keyframes inputHighlighter {
+  from {
+    background: $yellow;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: $yellow;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}

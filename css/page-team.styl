@@ -47,12 +47,15 @@ body
              background $blueGrey
 
           .personal-info
-           text-align left
-           font-size .8em
-           margin 5px 0 0 5px
+            text-align left
+            font-size .8em
+            margin 5px 0 0 5px
+            overflow hidden
+            white-space nowrap
+            text-overflow ellipsis
 
-           span:nth-of-type(2)
-             font-size .6rem
+            span:nth-of-type(2)
+              font-size .6rem
 
 // @media all and (max-width:1380px)
 //   body
@@ -83,8 +86,8 @@ body
      .content-wrap
       .section-wrap, #board
         .team-member
-         width 48% !important
-         margin-right 1% !important
+         width 50% !important
+         // margin-right 0 !important
          margin-bottom 10px !important
 
          &:nth-of-type(2n)
