@@ -10,7 +10,7 @@ To compile Stylus stylesheets into CSS, Stylus must me set to watch the CSS fold
 From /themes/wikitongues, run:
 
 ```bash
-stylus -u nib -w css
+stylus -u nib -w css/app.styl
 ```
 
 ## Development Map
