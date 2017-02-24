@@ -408,21 +408,26 @@ div.cta-section a.cta-secondary:hover {
     padding-bottom: 0 !important;
   }
   .page-banner {
-    height: 100vh !important;
+    height: 90vh !important;
   }
   .page-banner h1 {
     width: initial !important;
-    font-size: 2.8rem !important;
+    font-size: 2.7rem !important;
   }
   .page-banner h1 span {
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 3rem;
   }
   .page-banner i {
     font-size: 2rem !important;
   }
+  .page-banner .carousel-slide {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   .page-banner .carousel-slide.banner-text {
-    padding: 80px 0;
+    padding: 70px 0;
   }
   .page-banner .carousel-slide.banner-text h1 span {
     line-height: 0.97;
@@ -500,7 +505,7 @@ header#header.scrolled {
 }
 header#header.scrolled .menu-main-navigation-container ul li a,
 header#header.scrolled .menu-secondary-navigation-header-menu-container ul li a {
-  color: #11242f !important;
+  color: #11242f;
   text-shadow: none;
 }
 header#header #logo {
@@ -588,6 +593,10 @@ body.admin-bar header#header {
   }
   body header#header .inner-wrap #logo a img {
     height: 45px;
+  }
+  body header#header.scrolled .menu-main-navigation-container ul li a,
+  body header#header.scrolled .menu-secondary-navigation-header-menu-container ul li a {
+    color: #11242f !important;
   }
   body header#header .menu-main-navigation-container {
     overflow-x: scroll;
@@ -710,25 +719,16 @@ body.home footer#footer {
 #partners #partners-list li p {
   font-style: italic;
 }
-#content-blocks div:nth-of-type(1):hover {
+#content-blocks .component:hover:nth-of-type(1) {
   background: #d63545;
 }
-#content-blocks div:nth-of-type(1) a:hover,
-#content-blocks div:nth-of-type(1) a:visited {
-  color: #fff;
-}
-#content-blocks div:nth-of-type(2):hover {
+#content-blocks .component:nth-of-type(2) {
   background: #ffc328;
 }
-#content-blocks div:nth-of-type(2) a:hover,
-#content-blocks div:nth-of-type(2) a:visited {
-  color: #fff;
-}
-#content-blocks div:nth-of-type(3):hover {
+#content-blocks .component:nth-of-type(3) {
   background: #4799fc;
 }
-#content-blocks div:nth-of-type(3) a:hover,
-#content-blocks div:nth-of-type(3) a:visited {
+#content-blocks .component a:hover {
   color: #fff;
 }
 .component {
@@ -806,6 +806,7 @@ body.home footer#footer {
 }
 @media all and (max-width: 640px) {
   .component {
+    background: #fff !important;
     padding-top: 0 !important;
     padding-bottom: 40px !important;
   }
