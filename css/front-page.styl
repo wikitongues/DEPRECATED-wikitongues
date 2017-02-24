@@ -33,30 +33,20 @@ body
       font-style italic
 
 #content-blocks
-  div
-   &:nth-of-type(1)
-     &:hover
-      background $red
+  .component
+    &:hover
+      &:nth-of-type(1)
+        background $red
 
-     a
-      &:hover, &:visited
-        color $white
+     &:nth-of-type(2)
+        background $yellow
 
-   &:nth-of-type(2)
-     &:hover
-      background $yellow
+     &:nth-of-type(3)
+        background $lightBlue
 
-     a
-      &:hover, &:visited
-        color $white
+    a:hover
+      color $white
 
-   &:nth-of-type(3)
-     &:hover
-      background $lightBlue
-
-     a
-      &:hover, &:visited
-        color $white
 
 .component
   position relative
@@ -140,32 +130,33 @@ body
 
 @media all and (max-width:640px)
   .component
-   padding-top 0 !important
-   padding-bottom 40px !important
+    background white !important
+    padding-top 0 !important
+    padding-bottom 40px !important
 
-   &.media
-     border-bottom none
+    &.media
+      border-bottom none
 
-     aside
-      position relative !important
-      width 100% !important
-      float none
-      -webkit-transform none !important
-      -moz-transform none !important
-      transform none !important
+      aside
+        position relative !important
+        width 100% !important
+        float none
+        -webkit-transform none !important
+        -moz-transform none !important
+        transform none !important
 
-      &:last-of-type
-        margin-top 20px !important
+        &:last-of-type
+          margin-top 20px !important
 
-   &::before
-     display none
+    &::before
+      display none
 
-   &.image
-     aside:first-of-type
-      padding-bottom 66%
+    &.image
+      aside:first-of-type
+        padding-bottom 66%
 
-   &.pullquote
-     width 100%
+    &.pullquote
+      width 100%
 
-     h1
-      font-size 1.25em
+      h1
+        font-size 1.25em

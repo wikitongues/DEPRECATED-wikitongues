@@ -17,7 +17,7 @@ header#header
       ul
         li
           a
-            color $deepBlue !important
+            color $deepBlue
             text-shadow none
 
   #logo
@@ -87,13 +87,24 @@ body
 
     header#header
       height initial
+
       .inner-wrap
         float left
+
         #logo
           float inherit
+
           a
             img
               height 45px
+
+      &.scrolled
+        .menu-main-navigation-container,
+        .menu-secondary-navigation-header-menu-container
+          ul
+            li
+              a
+                color $deepBlue !important
 
       .menu-main-navigation-container
         overflow-x scroll
