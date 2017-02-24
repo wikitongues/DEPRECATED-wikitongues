@@ -14,7 +14,7 @@ header#header.scrolled {
 }
 header#header.scrolled .menu-main-navigation-container ul li a,
 header#header.scrolled .menu-secondary-navigation-header-menu-container ul li a {
-  color: $deepBlue;
+  color: $deepBlue !important;
   text-shadow: none;
 }
 header#header #logo {

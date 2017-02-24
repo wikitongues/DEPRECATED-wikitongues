@@ -500,7 +500,7 @@ header#header.scrolled {
 }
 header#header.scrolled .menu-main-navigation-container ul li a,
 header#header.scrolled .menu-secondary-navigation-header-menu-container ul li a {
-  color: #11242f;
+  color: #11242f !important;
   text-shadow: none;
 }
 header#header #logo {
@@ -1463,6 +1463,48 @@ body.page-id-193 footer#footer {
     width: 0;
     background: transparent;
   }
+}
+.panel-grid .textwidget table {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  font-weight: 300;
+  margin-top: 30px;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.panel-grid .textwidget table tr {
+  border-bottom: 1px solid #eaeaea;
+}
+.panel-grid .textwidget table th {
+  font-weight: 300;
+  color: #aaa;
+}
+.panel-grid .textwidget table th:first-of-type {
+  width: 17%;
+  text-align: left;
+}
+.panel-grid .textwidget table th:nth-of-type(2) {
+  width: 27%;
+}
+.panel-grid .textwidget table th:nth-of-type(3) {
+  width: 39%;
+}
+.panel-grid .textwidget table th:nth-of-type(4) {
+  width: 17%;
+}
+.panel-grid .textwidget table th:not(:first-of-type) {
+  text-align: right;
+}
+.panel-grid .textwidget table th,
+.panel-grid .textwidget table td {
+  padding: 20px;
+  vertical-align: top;
+}
+.panel-grid .textwidget table td:first-of-type {
+  font-weight: 500;
+}
+.panel-grid .textwidget table td:not(:first-of-type) {
+  text-align: right;
 }
 .wcopc #opc-messages,
 .wcopc .woocommerce-info {
