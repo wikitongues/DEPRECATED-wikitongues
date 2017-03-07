@@ -21,7 +21,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/wp-content/themes/wikitongues/favicon.ico">
 
-        <script src="<?php bloginfo('url'); ?>/wp-content/themes/itsmeandyou/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="<?php bloginfo('url'); ?>/wp-content/themes/wikitongues/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://use.fontawesome.com/3cfe9e421f.js"></script>
 
         <?php wp_head(); ?>
