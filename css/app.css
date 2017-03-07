@@ -729,10 +729,10 @@ body.home footer#footer {
 #content-blocks .component:hover:nth-of-type(1) {
   background: #d63545;
 }
-#content-blocks .component:nth-of-type(2) {
+#content-blocks .component:hover:nth-of-type(2) {
   background: #ffc328;
 }
-#content-blocks .component:nth-of-type(3) {
+#content-blocks .component:hover:nth-of-type(3) {
   background: #4799fc;
 }
 #content-blocks .component a:hover {

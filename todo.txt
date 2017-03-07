@@ -1,0 +1,58 @@
+<div id="aside"><div class="wrapper" style="
+    display: inline-block;
+    padding: 15px;
+    /* border: 1px double #edf1f3; */
+    border-radius: 2px;
+">
+<h1>Technology
+  </h1>
+  <span class="break">
+<span style="
+    /* border: 1px solid white; */
+    /* margin: 2px; */
+    /* box-shadow: 0px 0px 0 2px #11242f; */
+"></span>
+  <span></span>
+  <span></span>
+</span>
+<p style="
+    display: block;
+    float: left;
+    margin: 20px 27px;
+    font-size: 0.9rem;
+    /* font-style: italic; */
+    color: #aaa;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+" class="note">Wikitongues develops a range of different technologies for both internal and external use. These are the areas we focus on.</p><div class="asideContent" style="
+    float: left;
+    display: inline-block;
+    /* column-count: 2; */
+    margin: 10px 20px;
+    padding-top: 0;
+    border-top: 3px solid #FFC328;
+    font-size: 0.7rem;
+">
+
+  <span class="area">
+<h2>
+    Tools
+  </h2>
+  <p>Only with the right tools can we acomplish the vision of providing a service for every language in the world. </p><p>
+Our first user-facing tool, and the first platform of its kind is Poly - a place for anyone to document and share their language, and a space to gain access to languages you've never known before.
+</p><p>
+We manage the code base and all code contributions on <a href="http://www.github.com/wikitongues/poly">Github</a>.
+</p></span>
+
+
+
+  <h2>
+    Data and Strategy
+  </h2>
+  <p>Wikitongues has a very ambitious goal. Being a platform for every language in the world requires knowing what every language in the world is, where they are spoken, and under what circumstances.
+  </p><p>
+  Leveraging this data to form actionable strategies for language acquisition and platform growth is a core activity of the organization</p><h2>
+    Research
+  </h2>
+  <p>Linguistics and computation are merging. We are dedicated to staying on the cutting edge of what can be done with language in a digital environment. Corpus linguistics, deep learning translation.</p></div>
+</div></div>
