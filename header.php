@@ -14,12 +14,12 @@
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
 
-        <link rel="apple-touch-icon" href="favicon.icns">
+        <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/wp-content/themes/wikitongues/favicon.icns">
         <!-- figure out how to load this correctly in functions.php -->
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Roboto:300,900" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/wp-content/themes/wikitongues/favicon.ico">
 
         <script src="<?php bloginfo('url'); ?>/wp-content/themes/itsmeandyou/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://use.fontawesome.com/3cfe9e421f.js"></script>
