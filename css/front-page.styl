@@ -1,8 +1,6 @@
 body
   &.home
    .page-banner
-     height 95vh
-
      i.fa
       display block !important
 
@@ -34,97 +32,84 @@ body
 
 #content-blocks
   .component
-    &:hover
-      &:nth-of-type(1)
-        background $red
+    position relative
+    height 95vh
+    overflow hidden
+    padding 20px 20px 0 0
 
-      &:nth-of-type(2)
-        background $yellow
+    &:nth-of-type(2n)
+      padding 20px 0 0 20px
 
-      &:nth-of-type(3)
-        background $lightBlue
+    a, a:visited
+      color $deepBlue
 
-    a:hover
-      color $white
+    a
+      width 100%
+      height 100%
+      display inline-block
 
+      aside
+        display inline-block
+        box-sizing border-box
 
-.component
-  position relative
-  // padding-top 100px
-  // padding-bottom 100px
+        &:first-of-type
+          height 100%
+          width 100%
+          float left
 
-  a, a:visited
-   color $deepBlue
+        &:last-of-type
+          position absolute
+          text-align center
+          bottom 0
+          left 0
+          width 33%
+          background white
+          margin 20px 40px
+          padding 20px
+          border-radius 2px
+          border 1px solid #f0f2f3
+          box-shadow 0 2px 4px rgba(0,0,0,0.1)
 
-  &.media
-   -webkit-transition all .1s ease-in-out
-   -moz-transition all .1s ease-in-out
-   -ms-transition all .1s ease-in-out
-   -o-transition all .1s ease-in-out
-   transition all .1s ease-in-out
+        .secondary-title
+          font-style italic
+          margin-bottom 0
+          padding-bottom 2em
+          border-bottom 1px solid
+          width 90%
+          margin 1em auto
 
-   // &::before
-   //  content ""
-   //  width 50%
-   //  height 1px
-   //  position absolute
-   //  bottom 0
-   //  left 50%
-   //  -webkit-transform translateX(-50%)
-   //  -moz-transform translateX(-50%)
-   //  transform translateX(-50%)
-   //  background $lightGrey
+        .text
+          font-size 0.8rem
+          width 70%
+          margin 2em auto 3em
+          text-align left
 
-   aside
-     display inline-block
-     box-sizing border-box
+    &:nth-of-type(2n-1)
+     a
+       aside:last-of-type
+        left initial
+        right 0
 
-     &:first-of-type
-      width 55%
-      float left
+    &.media
+     transition all .1s ease-in-out
 
-     &:last-of-type
-      position absolute
-      top 50%
-      -webkit-transform translateY(-50%)
-      -moz-transform translateY(-50%)
-      transform translateY(-50%)
-      width 45%
-      padding 0 7.5%
-      text-align center
-
-      .secondary-title
-        font-style italic
-
-   &:nth-of-type(2n)
+    &.video
      aside:first-of-type
-      float right
+       padding 0
 
-   &:last-of-type
-     &::before
-      display none
+    &.pullquote
+     width 75%
+     margin 0 auto
 
-  &.image
-   aside:first-of-type
-     padding-bottom 40%
+     h1
+       font-family $serif !important
+       text-align center
 
-  &.video
-   aside:first-of-type
-     padding 0
-
-  &.pullquote
-   width 75%
-   margin 0 auto
-
-   h1
-     font-family $serif !important
-     text-align center
-
-   p
-     width 100%
-     padding-right 10%
-     box-sizing border-box
-     text-align right
+     p
+       width 100%
+       padding-right 10%
+       box-sizing border-box
+       text-align right
 
 // @media all and (max-width:1024px) and (min-width:641px)
 

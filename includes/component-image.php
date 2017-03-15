@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-$title = get_sub_field('title'); 
+$title = get_sub_field('title');
 $secondary_title = get_sub_field('secondary_title');
 $text = get_sub_field('text');
 $image = get_sub_field('image');
