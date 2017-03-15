@@ -5,7 +5,8 @@ function navScrollWatcher() {
 }
 
 function dynamicNav() {
-  var target = $(".page-banner").height()-100
+  // var target = $(".page-banner").height()-100
+  var target = 1
   if($(document).scrollTop() >= target) {
     $("#header").addClass("scrolled")
   } else {
