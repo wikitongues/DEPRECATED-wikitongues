@@ -52,7 +52,7 @@ h4,
 h5 {
   font-family: 'Roboto', sans-serif !important;
 }
-div.cta-section {
+body > div.cta-section {
   margin-top: 20px;
   padding: 100px 0;
   text-align: center;
@@ -75,16 +75,16 @@ div.cta-section {
   background: -ms-linear-gradient(315deg, #ffafbd, #ffc3a0);
   background: linear-gradient(135deg, #ffafbd, #ffc3a0);
 }
-div.cta-section h1,
-div.cta-section p {
+body > div.cta-section h1,
+body > div.cta-section p {
   margin: 0 auto;
 }
-div.cta-section h1 {
+body > div.cta-section h1 {
   max-width: 750px;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
-div.cta-section a.cta-button {
+body > div.cta-section a.cta-button {
   display: block;
   max-width: 300px;
   background: #4799fc;
@@ -102,12 +102,12 @@ div.cta-section a.cta-button {
   font-weight: 900;
   text-align: center;
 }
-div.cta-section a.cta-secondary {
+body > div.cta-section a.cta-secondary {
   color: #fff;
   font-style: italic;
   display: inline-block;
 }
-div.cta-section a.cta-secondary::after {
+body > div.cta-section a.cta-secondary::after {
   content: "";
   width: 100%;
   height: 3px;
@@ -433,9 +433,6 @@ div.cta-section a.cta-secondary::after {
     margin-top: 20px;
     padding-bottom: 0 !important;
   }
-  .page-banner {
-    height: 90vh !important;
-  }
   .page-banner h1 {
     width: initial !important;
     font-size: 2.7rem !important;
@@ -614,9 +611,9 @@ body.admin-bar header#header {
   body header#header {
     height: initial;
   }
-  body header#header div ul li a {
-    padding: 10px !important;
-    font-size: 0.9rem !important;
+  body header#header .menu-secondary-navigation-header-menu-container ul li a {
+    padding: 9px;
+    font-size: 0.9rem;
   }
   body header#header .inner-wrap {
     float: left;
@@ -776,6 +773,11 @@ body.home footer#footer {
   height: 100%;
   width: 100%;
   float: left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #content-blocks .component a aside:last-of-type {
   position: absolute;
@@ -837,40 +839,57 @@ body.home footer#footer {
   text-align: right;
 }
 @media all and (max-width: 640px) {
-  .component {
+  #content-blocks .component {
+    width: 100%;
     background: #fff !important;
-    padding-top: 0 !important;
-    padding-bottom: 40px !important;
+    padding: 0;
+    margin-top: 20px;
   }
-  .component.media {
+  #content-blocks .component:nth-of-type(2n) {
+    padding: 0;
+  }
+  #content-blocks .component.media {
     border-bottom: none;
   }
-  .component.media aside {
-    position: relative !important;
-    width: 100% !important;
-    float: none;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -o-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important;
+  #content-blocks .component.media aside {
+    position: relative;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
-  .component.media aside:last-of-type {
-    margin-top: 20px !important;
+  #content-blocks .component.media aside:last-of-type {
+    margin: 0;
+    width: 95%;
+    margin: 10px;
   }
-  .component::before {
+  #content-blocks .component::before {
     display: none;
   }
-  .component.image aside:first-of-type {
-    padding-bottom: 66%;
-  }
-  .component.pullquote {
+  #content-blocks .component.pullquote {
     width: 100%;
   }
-  .component.pullquote h1 {
+  #content-blocks .component.pullquote h1 {
     font-size: 1.25em;
+  }
+  #content-blocks .component:nth-of-type(1) a aside:first-of-type {
+    -webkit-background-size: 420%;
+    -moz-background-size: 420%;
+    background-size: 420%;
+    background-position: -109px -100px;
+  }
+  #content-blocks .component:nth-of-type(2) a aside:first-of-type {
+    -webkit-background-size: 370%;
+    -moz-background-size: 370%;
+    background-size: 370%;
+    background-position: 81% 100%;
+  }
+  #content-blocks .component:nth-of-type(3) a aside:first-of-type {
+    -webkit-background-size: 420%;
+    -moz-background-size: 420%;
+    background-size: 420%;
+    background-position: 75% 100%;
   }
 }
 body.page-template-page-team .content-wrap .section-wrap {

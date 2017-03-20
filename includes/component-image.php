@@ -10,7 +10,7 @@ $linked_page = get_sub_field('linked_page'); ?>
 	<?php if ( $linked_page ): ?>
 	<a href="<?php echo $linked_page; ?>">
 	<?php endif; ?>
-		<aside style="background:url(<?php echo $image['url']; ?>) center center no-repeat; background-size:cover;"></aside>
+		<aside style="background-image:url(<?php echo $image['url']; ?>)"></aside>
 		<aside>
 		 	<p class="secondary-title"><?php echo $secondary_title; ?></p>
 		 	<h1><?php echo $title; ?></h1>
