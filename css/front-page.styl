@@ -56,6 +56,10 @@ body
           height 100%
           width 100%
           float left
+          background-size cover
+          background-repeat no-repeat
+          background-position center center
+
 
         &:last-of-type
           position absolute
@@ -114,34 +118,52 @@ body
 // @media all and (max-width:1024px) and (min-width:641px)
 
 @media all and (max-width:640px)
-  .component
-    background white !important
-    padding-top 0 !important
-    padding-bottom 40px !important
-
-    &.media
-      border-bottom none
-
-      aside
-        position relative !important
-        width 100% !important
-        float none
-        -webkit-transform none !important
-        -moz-transform none !important
-        transform none !important
-
-        &:last-of-type
-          margin-top 20px !important
-
-    &::before
-      display none
-
-    &.image
-      aside:first-of-type
-        padding-bottom 66%
-
-    &.pullquote
+  #content-blocks
+    .component
       width 100%
+      background white !important
+      padding 0
+      margin-top 20px
 
-      h1
-        font-size 1.25em
+      &:nth-of-type(2n)
+        padding 0
+
+      &.media
+        border-bottom none
+
+        aside
+          position relative
+          transform none
+
+          &:last-of-type
+            margin 0
+            width 95%
+            margin 10px
+
+
+      &::before
+        display none
+
+      &.pullquote
+        width 100%
+
+        h1
+          font-size 1.25em
+
+      &:nth-of-type(1)
+        a
+          aside:first-of-type
+            background-size 420%
+            background-position -109px -100px
+
+      &:nth-of-type(2)
+        a
+          aside:first-of-type
+            background-size 370%
+            background-position 81% 100%
+
+      &:nth-of-type(3)
+        a
+          aside:first-of-type
+            background-size 420%
+            background-position 75% 100%
